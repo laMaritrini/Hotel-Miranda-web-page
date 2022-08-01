@@ -1,0 +1,27 @@
+{
+  "name": "hotel-miranda-web-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:watch": "sass --watch styles.scss:styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laMaritrini/Hotel-Miranda-web-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laMaritrini/Hotel-Miranda-web-page/issues"
+  },
+  "homepage": "https://github.com/laMaritrini/Hotel-Miranda-web-page#readme",
+  "devDependencies": {
+    "sass": "^1.54.0"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
