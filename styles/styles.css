@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&display=swap");
 .respmenu input[type=checkbox],
 .respmenu .fa-bars,
 .respmenu .fa-xmark {
@@ -5,15 +6,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  right: 0;
-  top: 0;
-  width: 48px;
-  height: 48px;
 }
 
 .respmenu .fa-bars,
 .respmenu .fa-xmark {
-  font-size: 48px;
+  padding-top: 10px;
+  font-size: 30px;
   pointer-events: none;
 }
 
@@ -22,9 +20,9 @@
 }
 
 .respmenu {
-  color: white;
+  color: #111111;
   position: relative;
-  background: #123456;
+  background: white;
   min-height: 48px;
 }
 
@@ -44,8 +42,226 @@
   display: none;
 }
 
-.header__title {
-  background-color: antiquewhite;
+.header__sub-title {
+  display: none;
+}
+
+.header {
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__nav {
+  padding-top: 50px;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 20px;
+}
+
+.input {
+  border: none;
+  width: 5px;
+}
+
+.input-icon {
+  color: #191919;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo {
+  display: flex;
+}
+.logo__H {
+  padding-top: 15px;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+}
+.logo__title {
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.user-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 16px;
+}
+
+hr {
+  width: 100%;
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+.list {
+  list-style-type: none;
+  font-weight: 600;
+  line-height: 1.9;
+}
+
+.home {
+  width: 100%;
+  padding: 20px;
+  background-color: #333333;
+  color: white;
+}
+.home__section {
+  padding-top: 60px;
+  letter-spacing: 2.8px;
+  font-size: 13px;
+  width: 220px;
+  padding-bottom: 25px;
+}
+.home__section--grey {
+  color: #777777;
+}
+.home__title {
+  width: fit-content;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 56px;
+  padding-bottom: 20px;
+}
+.home__paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.9;
+  color: #777777;
+}
+.home__image {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  display: block;
+}
+.home__sub-title {
+  font-size: 30px;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  z-index: 2;
+}
+
+.button-page {
+  background-color: inherit;
+  letter-spacing: 2.8px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px 45px;
+  border: none;
+  margin: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3294117647);
+}
+.button-page__sepia {
+  background-color: #bead8e;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.button-page:hover {
+  background-color: #bead8e;
+}
+
+.availability-check {
+  background-color: #222222;
+}
+.availability-check__label {
+  color: white;
+  padding-bottom: 30px;
+}
+.availability-check__input {
+  margin-bottom: 30px;
+  background-color: inherit;
+  color: rgba(255, 255, 255, 0.3294117647);
+  border: none;
+  border-bottom: 2px solid #bead8e;
+}
+.availability-check__input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  filter: invert(79%) sepia(34%) saturate(237%) hue-rotate(0deg) brightness(85%) contrast(82%);
+}
+
+.container-form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gap {
+  background-color: white;
+  height: 60px;
+}
+
+.about-us {
+  width: 100%;
+  background-color: #f9f9f9;
+  height: 900px;
+  padding: 20px;
+  margin-bottom: 400px;
+}
+
+.team {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container-icons {
+  margin: 20%;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin-bottom: -30px;
+}
+
+.team-icon {
+  position: absolute;
+  padding: 80px;
+  margin: auto;
+  display: block;
+  z-index: 1;
+}
+
+.team-icon__background {
+  color: #f8f8f8;
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+}
+
+.room {
+  padding-top: 300px;
+  margin: 20px;
 }
 
 html,
@@ -56,7 +272,9 @@ html,
 }
 
 body {
+  font-family: "Archivo", sans-serif;
   min-width: 320px;
+  background-color: rgb(255, 252, 252);
 }
 
 /*# sourceMappingURL=styles.css.map */

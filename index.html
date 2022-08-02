@@ -15,64 +15,94 @@
   <body>
     <header class="header">
       <p class="header__sub-title">We Make You Feel Comfortable</p>
+      <div class="header__icons">
+        <img
+          src="./images/user.svg"
+          alt="user"
+          width="10px"
+          class="user-icon"
+        />
+        <form action="" class="input-wrapper">
+          <input type="search" class="input" />
+          <i class="fa-solid fa-magnifying-glass input-icon"></i>
+        </form>
+      </div>
       <div class="header__title">
-        <h1>H</h1>
-        <h1>HOTEL MIRANDA</h1>
+        <div class="logo">
+          <h1 class="logo__H">H</h1>
+          <h1 class="logo__title">HOTEL MIRANDA</h1>
+        </div>
       </div>
       <div class="respmenu">
         <input type="checkbox" />
         <i class="fa-solid fa-bars"></i>
         <i class="fa-solid fa-xmark"></i>
-        <nav>
-          <ul>
-            <li>About us</li>
+        <nav class="header__nav">
+          <ul class="list">
+            <li>About Us</li>
             <li>Rooms</li>
             <li>Offers</li>
             <li>Contact</li>
           </ul>
         </nav>
       </div>
-      <img src="./images/user.svg" alt="user" width="10px" />
-      <form action="">
-        <input type="text" />
-      </form>
     </header>
-    <section>
-      <h4>THE ULTIMATE LUXURY EXPERIENCE</h4>
-      <h2>The Perfect Base for you</h2>
-      <button>TAKE A TOUR</button>
-      <button>LEARN MORE</button>
-    </section>
-    <section>
-      <form action="">
-        <label for="">Arrival Date</label>
-        <input type="date" placeholder="24th march 2020" />
-        <label for="">LeDeparture Date</label>
-        <input type="date" placeholder="30th march 2020" />
-      </form>
-      <button>CHECK AVAILABILITY</button>
-    </section>
 
-    <section>
-      <h4>ABOUT US</h4>
-      <h2>Discover our Underground.</h2>
-      <p>
+    <section class="home">
+      <h4 class="home__section">THE ULTIMATE LUXURY EXPERIENCE</h4>
+      <h2 class="home__title">The Perfect Base For You</h2>
+      <div>
+        <button class="button-page">TAKE A TOUR</button>
+        <button class="button-page">LEARN MORE</button>
+      </div>
+    </section>
+    <section class="availability-check">
+      <form action="" class="container-form">
+        <label for="" class="availability-check__label">Arrival Date</label>
+        <input
+          type="date"
+          placeholder="24th march 2020"
+          class="availability-check__input"
+        />
+        <label for="" class="availability-check__label">LeDeparture Date</label>
+        <input
+          type="date"
+          placeholder="30th march 2020"
+          class="availability-check__input"
+        />
+      </form>
+      <button class="button-page">CHECK AVAILABILITY</button>
+    </section>
+    <div class="gap"></div>
+    <section class="about-us">
+      <h4 class="home__section home__section--grey">ABOUT US</h4>
+      <h2 class="home__title">Discover our Underground.</h2>
+      <p class="home__paragraph">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
         eligendi autem ab earum, pariatur, ullam rerum, odit fugiat molestiae
         incidunt cupiditate tenetur illum aperiam repudiandae? Rerum nulla cum
         placeat dolorem.
       </p>
-      <button>BOOK NOW</button>
-      <img src="" alt="" />
-      <img src="./images/team.svg" alt="team" />
-      <h3>Strong Team</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor.
-      </p>
+      <button class="button-page button-page__sepia">BOOK NOW</button>
+      <img class="home__image" src="" alt="" />
+      <div class="team">
+        <div class="container-icons">
+          <img class="team-icon" src="./images/team.svg" alt="team" />
+          <img
+            class="team-icon__background"
+            src="./images/team-background.svg"
+            alt="team"
+          />
+        </div>
+        <h3 class="home__sub-title">Strong Team</h3>
+        <p class="home__paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor.
+        </p>
+      </div>
     </section>
-    <section>
-      <img src="" alt="" />
+    <section class="rooms">
+      <img class="home__image" src="" alt="" />
       <img src="./images/booking.svg" alt="booking" />
       <h3>Luxury Room</h3>
       <p>

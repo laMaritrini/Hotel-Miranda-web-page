@@ -1,0 +1,140 @@
+$background-dark: #333333;
+$background-black: #222222;
+$font-oldStandard: "Old Standard TT", serif;
+$sepia: #bead8e;
+
+.home {
+  width: 100%;
+  padding: 20px;
+  background-color: $background-dark;
+  color: white;
+  &__section {
+    padding-top: 60px;
+    letter-spacing: 2.8px;
+    font-size: 13px;
+    width: 220px;
+    padding-bottom: 25px;
+    &--grey {
+      color: #777777;
+    }
+  }
+  &__title {
+    width: fit-content;
+    font-family: $font-oldStandard;
+    font-weight: 400;
+    font-size: 56px;
+    padding-bottom: 20px;
+  }
+  &__paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #777777;
+  }
+  &__image {
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    display: block;
+  }
+
+  &__sub-title {
+    font-size: 30px;
+    font-family: $font-oldStandard;
+    font-weight: 400;
+    z-index: 2;
+  }
+}
+.button-page {
+  background-color: inherit;
+  letter-spacing: 2.8px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px 45px;
+  border: none;
+  margin: 20px;
+  border: 1px solid #ffffff54;
+  &__sepia {
+    background-color: #bead8e;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+.button-page:hover {
+  background-color: $sepia;
+}
+.availability-check {
+  background-color: $background-black;
+
+  &__label {
+    color: white;
+    padding-bottom: 30px;
+  }
+  &__input {
+    margin-bottom: 30px;
+    background-color: inherit;
+    color: #ffffff54;
+    border: none;
+    border-bottom: 2px solid $sepia;
+  }
+  &__input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    filter: invert(79%) sepia(34%) saturate(237%) hue-rotate(0deg)
+      brightness(85%) contrast(82%);
+  }
+}
+.container-form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.gap {
+  background-color: white;
+  height: 60px;
+}
+.about-us {
+  width: 100%;
+  background-color: #f9f9f9;
+  height: 900px;
+  padding: 20px;
+  margin-bottom: 400px;
+}
+.team {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.container-icons {
+  margin: 20%;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin-bottom: -30px;
+}
+.team-icon {
+  position: absolute;
+  padding: 80px;
+  margin: auto;
+  display: block;
+  z-index: 1;
+}
+
+.team-icon__background {
+  color: #f8f8f8;
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+}
+.room {
+  padding-top: 300px;
+  margin: 20px;
+}

@@ -1,4 +1,10 @@
 @import "header";
+@import "home";
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&display=swap");
+
+$font-archivo: "Archivo", sans-serif;
+$font-oldStandard: "Old Standard TT", serif;
 
 html,
 * {
@@ -7,5 +13,7 @@ html,
   padding: 0;
 }
 body {
+  font-family: $font-archivo;
   min-width: 320px;
+  background-color: rgb(255, 252, 252);
 }
