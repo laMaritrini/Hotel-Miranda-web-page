@@ -76,7 +76,7 @@
     <div class="gap"></div>
     <section class="about-us">
       <h4 class="home__section home__section--grey">ABOUT US</h4>
-      <h2 class="home__title">Discover our Underground.</h2>
+      <h2 class="home__title">Discover Our Underground.</h2>
       <p class="home__paragraph">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
         eligendi autem ab earum, pariatur, ullam rerum, odit fugiat molestiae
@@ -101,188 +101,239 @@
         </p>
       </div>
     </section>
-    <section class="rooms">
-      <img class="home__image" src="" alt="" />
-      <img src="./images/booking.svg" alt="booking" />
-      <h3>Luxury Room</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor.
-      </p>
-    </section>
     <section>
-      <h4>ROOMS</h4>
-      <h2>Hand Picked Rooms</h2>
-      <div>
-        <i class="fa-regular fa-bed"></i>
-        <i class="fa-solid fa-wifi"></i>
-        <i class="fa-regular fa-car"></i>
-        <i class="fa-regular fa-snowflake"></i>
-        <i
-          class="fa-regular fa-dumbbell fa-rotate-by"
-          style="--fa-rotate-angle: 40deg"
-        ></i>
-        <img src="./images/ban-smoking.svg" alt="no-smoking" />
-        <img src="./images/cocktail.svg" alt="cocktail" />
+      <div class="rooms-section">
+        <img class="home__image" src="" alt="" />
+        <div class="rooms-section__text">
+          <img class="icon-booking" src="./images/booking.svg" alt="booking" />
+          <h3 class="home__sub-title home__sub-title--color">Luxury Room</h3>
+          <p class="home__paragraph home__paragraph--color">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor.
+          </p>
+        </div>
+      </div>
+      <div class="text-block">
+        <h4 class="home__section home__section--grey">ROOMS</h4>
+        <h2 class="home__title home__title">Hand Picked Rooms</h2>
+      </div>
+      <div class="icons-group">
+        <img class="icon-rooms" src="./images/bed.svg" alt="no-smoking" />
+        <img class="icon-rooms" src="./images/wifi.svg" alt="no-smoking" />
+        <img class="icon-rooms" src="./images/car.svg" alt="no-smoking" />
+        <img class="icon-rooms" src="./images/snowflake.svg" alt="no-smoking" />
+        <img class="icon-rooms" src="./images/dumbbell.svg" alt="no-smoking" />
+        <img class="icon-rooms" src="./images/cocktail.svg" alt="cocktail" />
+      </div>
+      <div class="slider-images">
+        <div class="carousel-container">
+          <img class="home__image" src="" alt="" />
+          <img class="home__image" src="" alt="" />
+          <img class="home__image" src="" alt="" />
+        </div>
         <button>
-          <i class="fa-solid fa-chevron-left"></i>
+          <i class="fa-solid fa-chevron-left prev"></i>
         </button>
-        <img src="" alt="rooms" />
         <button>
-          <i class="fa-solid fa-chevron-right"></i>
+          <i class="fa-solid fa-chevron-right next"></i>
         </button>
       </div>
+      <div class="block-center">
+        <h3 class="home__sub-title">Minimal Duplex Room</h3>
+        <p class="home__paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore.
+        </p>
+        <p class="block-center__price">
+          $345<span class="block-center__price--night">/Night</span>
+        </p>
+      </div>
     </section>
-    <section>
-      <h3>Minimal Duplex Room</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore.
-      </p>
-      <p>$345/ <span>Night</span></p>
-    </section>
-    <section>
-      <h4>INTRO VIDEO</h4>
-      <h2>Meet With Our Luxury Place.</h2>
-      <p>
+    <section class="video-section">
+      <h4 class="home__section home__section--sepia">INTRO VIDEO</h4>
+      <h2 class="home__title home__title--white">
+        Meet With Our Luxury Place.
+      </h2>
+      <p class="home__paragraph">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat you have to understand this.
       </p>
-      <video width="320" height="240" controls>
-        <source src="" type="video/mp4" />
+      <!-- <video width="320" height="240" autoplay>
+        <source
+          src="https://www.youtube.com/embed/Bu3Doe45lcU?start=25&end=75"
+        />
         Your browser does not support the video tag.
-      </video>
-      <button>BOOK NOW</button>
+      </video> -->
+      <iframe
+        width="100%"
+        height="270px"
+        src="https://www.youtube.com/embed/Bu3Doe45lcU?start=25&end=75"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <button class="button-page button-page__sepia">BOOK NOW</button>
     </section>
-    <section>
-      <h4>FACILITIES</h4>
-      <h2>Core Features</h2>
+    <section class="facilities-section">
+      <div class="block-center block-center__facilities">
+        <h4 class="home__section home__section--grey">FACILITIES</h4>
+        <h2 class="home__title home__title">Core Features</h2>
+      </div>
+
       <div>
-        <div>
-          <p>01</p>
-          <img src="./images/rating.svg" alt="" />
+        <div class="features-block">
+          <p class="features-block__number">01</p>
+          <img class="features-block__img" src="./images/rating.svg" alt="" />
         </div>
-        <h3>Have High Rating</h3>
-        <p>
+        <h3 class="home__sub-title">Have High Rating</h3>
+        <p class="home__paragraph">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna..
         </p>
       </div>
       <div>
-        <div>
-          <p>02</p>
-          <img src="./images/clock.svg" alt="" />
+        <div class="features-block">
+          <p class="features-block__number">02</p>
+          <img class="features-block__img" src="./images/clock.svg" alt="" />
         </div>
-        <h3>Quiet Hours</h3>
-        <p>
+        <h3 class="home__sub-title">Quiet Hours</h3>
+        <p class="home__paragraph">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna..
         </p>
       </div>
       <div>
-        <div>
-          <p>03</p>
-          <img src="./images/pointer-map.svg" alt="" />
+        <div class="features-block">
+          <p class="features-block__number">03</p>
+          <img
+            class="features-block__img"
+            src="./images/pointer-map.svg"
+            alt=""
+          />
         </div>
-        <h3>Best Locations</h3>
-        <p>
+        <h3 class="home__sub-title">Best Locations</h3>
+        <p class="home__paragraph">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna..
         </p>
       </div>
       <div>
-        <div>
-          <p>04</p>
-          <img src="./images/clock-cancell.svg" alt="" />
+        <div class="features-block">
+          <p class="features-block__number">04</p>
+          <img
+            class="features-block__img"
+            src="./images/clock-cancell.svg"
+            alt=""
+          />
         </div>
-        <h3>Free Cancellation</h3>
-        <p>
+        <h3 class="home__sub-title">Free Cancellation</h3>
+        <p class="home__paragraph">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna..
         </p>
       </div>
       <div>
-        <div>
-          <p>05</p>
-          <img src="./images/payment.svg" alt="" />
+        <div class="features-block">
+          <p class="features-block__number">05</p>
+          <img class="features-block__img" src="./images/payment.svg" alt="" />
         </div>
-        <h3>Payment Options</h3>
-        <p>
+        <h3 class="home__sub-title">Payment Options</h3>
+        <p class="home__paragraph">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna..
         </p>
       </div>
       <div>
-        <div>
-          <p>06</p>
-          <img src="./images/ribbon.svg" alt="" />
+        <div class="features-block">
+          <p class="features-block__number">06</p>
+          <img class="features-block__img" src="./images/ribbon.svg" alt="" />
         </div>
-        <h3>Special Offers</h3>
-        <p>
+        <h3 class="home__sub-title">Special Offers</h3>
+        <p class="home__paragraph">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna..
         </p>
       </div>
       <div><button>.</button></div>
     </section>
-    <section>
-      <img src="./images/donuts.svg" alt="" />
-      <h2>Our Foods Menu</h2>
-      <div>
-        <img src="" alt="" />
-        <h5>Eggs & Bacon</h5>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
-          eiusmod tempor.
-        </p>
-        <i class="fa-solid fa-arrow-right-long"></i>
+    <section class="food-section">
+      <div class="donut-container">
+        <img class="donut-img" src="./images/donuts.svg" alt="" />
       </div>
-      <div>
-        <img src="" alt="" />
-        <h5>Tea or Coffee</h5>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
-          eiusmod tempor.
-        </p>
-        <i class="fa-solid fa-arrow-right-long"></i>
+      <div class="food-section__titles">
+        <h4 class="home__section home__section--grey">MENU</h4>
+        <h2 class="home__title home__title">Our Foods Menu</h2>
       </div>
-      <div>
-        <img src="" alt="" />
-        <h5>Chia Oatmeal</h5>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
-          eiusmod tempor.
-        </p>
-        <i class="fa-solid fa-arrow-right-long"></i>
+      <div class="menu-section">
+        <img class="food-section__img" src="" alt="" />
+        <div class="menu-section__text">
+          <h5 class="home__sub-title home__sub-title--menu">Eggs & Bacon</h5>
+          <p class="home__paragraph home__paragraph--black">
+            Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+            eiusmod tempor.
+          </p>
+          <!-- <i class="fa-solid fa-arrow-right-long"></i> -->
+        </div>
       </div>
-      <div>
-        <img src="" alt="" />
-        <h5>Fruit Parfait</h5>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
-          eiusmod tempor.
-        </p>
-        <i class="fa-solid fa-arrow-right-long"></i>
+      <div class="menu-section">
+        <img class="food-section__img" src="" alt="" />
+        <div class="menu-section__text">
+          <h5 class="home__sub-title home__sub-title--menu">Tea or Coffee</h5>
+          <p class="home__paragraph home__paragraph--black">
+            Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+            eiusmod tempor.
+          </p>
+          <!-- <i class="fa-solid fa-arrow-right-long"></i> -->
+        </div>
       </div>
-      <div>
-        <img src="" alt="" />
-        <h5>Marmelade Selection</h5>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
-          eiusmod tempor.
-        </p>
-        <i class="fa-solid fa-arrow-right-long"></i>
+      <div class="menu-section">
+        <img class="food-section__img" src="" alt="" />
+        <div class="menu-section__text">
+          <h5 class="home__sub-title home__sub-title--menu">Chia Oatmeal</h5>
+          <p class="home__paragraph home__paragraph--black">
+            Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+            eiusmod tempor.
+          </p>
+        </div>
+        <!-- <i class="fa-solid fa-arrow-right-long"></i> -->
       </div>
-      <div>
-        <img src="" alt="" />
-        <h5>Cheese Plate</h5>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
-          eiusmod tempor.
-        </p>
-        <i class="fa-solid fa-arrow-right-long"></i>
+      <div class="menu-section">
+        <img class="food-section__img" src="" alt="" />
+        <div class="menu-section__text">
+          <h5 class="home__sub-title home__sub-title--menu">Fruit Parfait</h5>
+          <p class="home__paragraph home__paragraph--black">
+            Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+            eiusmod tempor.
+          </p>
+          <!-- <i class="fa-solid fa-arrow-right-long"></i> -->
+        </div>
+      </div>
+      <div class="menu-section">
+        <img class="food-section__img" src="" alt="" />
+        <div class="menu-section__text">
+          <h5 class="home__sub-title home__sub-title--menu">
+            Marmelade Selection
+          </h5>
+          <p class="home__paragraph home__paragraph--black">
+            Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+            eiusmod tempor.
+          </p>
+          <!-- <i class="fa-solid fa-arrow-right-long"></i> -->
+        </div>
+      </div>
+      <div class="menu-section">
+        <img class="food-section__img" src="" alt="" />
+        <div class="menu-section__text">
+          <h5 class="home__sub-title home__sub-title--menu">Cheese Plate</h5>
+          <p class="home__paragraph home__paragraph--black">
+            Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+            eiusmod tempor.
+          </p>
+          <!-- <i class="fa-solid fa-arrow-right-long"></i> -->
+        </div>
       </div>
       <button>
         <i class="fa-solid fa-chevron-left"></i>
@@ -291,31 +342,47 @@
       <button>
         <i class="fa-solid fa-chevron-right"></i>
       </button>
-      <img src="" alt="" />
-      <img src="" alt="" />
-      <img src="" alt="" />
+      <img class="home__image" src="" alt="" />
+      <img class="home__image" src="" alt="" />
+      <img class="home__image" src="" alt="" />
       <div><button>.</button></div>
     </section>
-    <section>
-      <div>
+    <section class="section-records">
+      <div class="block-records">
         <img src="./images/missil.svg" alt="" />
-        <p>84k<span>+</span></p>
-        <p>Projects are Completed</p>
+        <p class="section-records__text">
+          84k<span class="section-records__text section-records__text--size"
+            >+</span
+          >
+        </p>
+        <p class="section-records__sub-text">Projects are Completed</p>
       </div>
-      <div>
+      <div class="block-records">
         <img src="./images/people.svg" alt="" />
-        <p>10M<span>+</span></p>
-        <p>Active Backers Around World</p>
+        <p class="section-records__text">
+          10M<span class="section-records__text section-records__text--size"
+            >+</span
+          >
+        </p>
+        <p class="section-records__sub-text">Active Backers Around World</p>
       </div>
-      <div>
+      <div class="block-records">
         <img src="./images/ranking.svg" alt="" />
-        <p>02K<span>+</span></p>
-        <p>Categories Served</p>
+        <p class="section-records__text">
+          02K<span class="section-records__text section-records__text--size"
+            >+</span
+          >
+        </p>
+        <p class="section-records__sub-text">Categories Served</p>
       </div>
-      <div>
+      <div class="block-records">
         <img src="./images/book.svg" alt="" />
-        <p>100M<span>+</span></p>
-        <p>Idea Raised Funds</p>
+        <p class="section-records__text">
+          100M<span class="section-records__text section-records__text--size"
+            >+</span
+          >
+        </p>
+        <p class="section-records__sub-text">Idea Raised Funds</p>
       </div>
     </section>
     <footer>

@@ -16,20 +16,34 @@ $sepia: #bead8e;
     padding-bottom: 25px;
     &--grey {
       color: #777777;
+      width: 100%;
+    }
+    &--sepia {
+      color: $sepia;
     }
   }
   &__title {
-    width: fit-content;
+    width: 100%;
     font-family: $font-oldStandard;
     font-weight: 400;
-    font-size: 56px;
+    font-size: 50px;
     padding-bottom: 20px;
+    &--white {
+      color: white;
+    }
   }
   &__paragraph {
+    padding-bottom: 30px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.9;
-    color: #777777;
+    color: #c2c2c2;
+    &--color {
+      color: white;
+    }
+    &--black {
+      color: black;
+    }
   }
   &__image {
     width: 300px;
@@ -39,10 +53,19 @@ $sepia: #bead8e;
   }
 
   &__sub-title {
+    padding-bottom: 20px;
     font-size: 30px;
     font-family: $font-oldStandard;
     font-weight: 400;
     z-index: 2;
+    &--color {
+      padding-top: 20px;
+      color: white;
+    }
+    &--menu {
+      font-size: 24px;
+      padding-bottom: 15px;
+    }
   }
 }
 .button-page {
@@ -73,6 +96,7 @@ $sepia: #bead8e;
     padding-bottom: 30px;
   }
   &__input {
+    width: 80%;
     margin-bottom: 30px;
     background-color: inherit;
     color: #ffffff54;
@@ -100,11 +124,12 @@ $sepia: #bead8e;
 .about-us {
   width: 100%;
   background-color: #f9f9f9;
-  height: 900px;
+  height: 800px;
   padding: 20px;
   margin-bottom: 400px;
 }
-.team {
+.team,
+.rooms-section {
   background-color: white;
   width: 300px;
   height: 300px;
@@ -114,7 +139,6 @@ $sepia: #bead8e;
   margin-bottom: 40px;
 }
 .container-icons {
-  margin: 20%;
   position: relative;
   width: 300px;
   height: 200px;
@@ -134,7 +158,135 @@ $sepia: #bead8e;
   bottom: 10%;
   right: 20%;
 }
-.room {
-  padding-top: 300px;
-  margin: 20px;
+.rooms-section {
+  margin-bottom: 430px;
+  &__text {
+    padding: 54px 35px;
+    background-color: $background-black;
+  }
+}
+.text-block {
+  text-align: center;
+}
+.icons-group {
+  text-align: center;
+  width: 250px;
+  height: 50px;
+  margin: auto;
+  display: block;
+  background-color: white;
+  border: 1px solid black;
+  padding-top: 15px;
+}
+.icon-rooms {
+  width: 15px;
+  height: 15px;
+  margin-left: 15px;
+}
+.slider-images {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.block-center {
+  width: 70%;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 150px;
+  &__price {
+    font-weight: 700;
+    font-size: 32px;
+    color: $sepia;
+    &--night {
+      font-size: 20px;
+    }
+  }
+  &__facilities {
+    width: 90%;
+    padding-bottom: 50px;
+  }
+}
+
+.video-section {
+  margin-top: 300px;
+  background-color: $background-black;
+  padding: 20px;
+}
+.facilities-section {
+  padding: 20px;
+}
+.features-block {
+  position: relative;
+  height: 150px;
+
+  margin-bottom: 30px;
+  &__number {
+    font-weight: 700;
+    font-size: 120px;
+    color: #2222220a;
+    position: absolute;
+    right: 10%;
+    top: 0;
+  }
+  &__img {
+    position: absolute;
+    left: 10%;
+    bottom: 0%;
+  }
+}
+.food-section {
+  padding: 20px;
+  width: 100%;
+  &__titles {
+    margin-top: 100px;
+  }
+  &__img {
+    width: 120px;
+    height: 120px;
+  }
+}
+.donut-container {
+  width: 114.5px;
+  height: 114.5px;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+}
+.donut-img {
+  position: absolute;
+  right: 0;
+  width: 114.5px;
+  height: 114.5px;
+  margin-right: -26px;
+}
+.menu-section {
+  display: flex;
+  padding-bottom: 20px;
+  &__text {
+    flex-direction: column;
+    padding-left: 15px;
+  }
+}
+.section-records {
+  text-align: center;
+  padding: 20px;
+  background-color: $background-black;
+  &__text {
+    padding-top: 10px;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    &--size {
+      font-size: 16px;
+    }
+  }
+  &__sub-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #999999;
+  }
+}
+.block-records {
+  padding: 20px;
 }
