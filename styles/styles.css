@@ -156,13 +156,16 @@ hr {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.9;
-  color: #c2c2c2;
+  color: #777777;
 }
 .home__paragraph--color {
   color: white;
 }
 .home__paragraph--black {
   color: black;
+}
+.home__paragraph--footer {
+  font-size: 16px;
 }
 .home__image {
   width: 300px;
@@ -237,12 +240,8 @@ hr {
   flex-direction: column;
 }
 
-.gap {
-  background-color: white;
-  height: 60px;
-}
-
 .about-us {
+  margin-top: 60px;
   width: 100%;
   background-color: #f9f9f9;
   height: 800px;
@@ -408,6 +407,7 @@ hr {
   text-align: center;
   padding: 20px;
   background-color: #222222;
+  margin-bottom: 60px;
 }
 .section-records__text {
   padding-top: 10px;
@@ -426,6 +426,105 @@ hr {
 
 .block-records {
   padding: 20px;
+}
+
+.footer {
+  background-image: url(../images/background-footer.svg);
+  padding: 20px;
+}
+.footer__H {
+  width: 80px;
+  height: 80px;
+  background-color: #bead8e;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px;
+}
+.footer__name {
+  padding-left: 20px;
+  letter-spacing: 2.6px;
+  font-weight: 700;
+}
+.footer__name--weight {
+  font-weight: 400;
+}
+.footer__category {
+  font-family: "Old Standard TT", serif;
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+.footer__list {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  justify-items: start;
+  padding: 0 20px 20px 0px;
+  list-style: none;
+}
+.footer__list--service {
+  font-weight: 400;
+  color: #777777;
+}
+.footer__list--service:before {
+  content: "+";
+  margin-right: 4px;
+}
+.footer__contact {
+  font-family: "Old Standard TT", serif;
+  color: black;
+  display: flex;
+  padding-bottom: 40px;
+  align-items: flex-start;
+}
+.footer__contact--text {
+  flex-direction: column;
+  padding-left: 20px;
+}
+.footer__contact--number {
+  padding: 5px;
+  color: #777777;
+}
+
+.block-introduction {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.block-introduction--content {
+  padding: 20px;
+}
+
+.container-social-icons {
+  padding-bottom: 30px;
+}
+
+.social-icon {
+  margin: 5px;
+  padding: 8px;
+  font-size: 30px;
+  color: #777777;
+  background-color: #f8f8f8;
+}
+
+.social-icon:hover {
+  color: white;
+  background-color: #bead8e;
+}
+
+.copyright {
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #f8f8f8;
+  width: 100%;
+  position: relative;
+  height: 100px;
+}
+.copyright__title {
+  padding: 20px 0 25px 0;
 }
 
 html,

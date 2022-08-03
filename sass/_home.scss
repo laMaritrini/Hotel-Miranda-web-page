@@ -37,12 +37,15 @@ $sepia: #bead8e;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.9;
-    color: #c2c2c2;
+    color: #777777;
     &--color {
       color: white;
     }
     &--black {
       color: black;
+    }
+    &--footer {
+      font-size: 16px;
     }
   }
   &__image {
@@ -117,11 +120,9 @@ $sepia: #bead8e;
   display: flex;
   flex-direction: column;
 }
-.gap {
-  background-color: white;
-  height: 60px;
-}
+
 .about-us {
+  margin-top: 60px;
   width: 100%;
   background-color: #f9f9f9;
   height: 800px;
@@ -272,6 +273,7 @@ $sepia: #bead8e;
   text-align: center;
   padding: 20px;
   background-color: $background-black;
+  margin-bottom: 60px;
   &__text {
     padding-top: 10px;
     font-size: 60px;

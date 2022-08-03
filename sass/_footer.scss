@@ -1,0 +1,98 @@
+$sepia: #bead8e;
+$font-oldStandard: "Old Standard TT", serif;
+
+.footer {
+  background-image: url(../images/background-footer.svg);
+  padding: 20px;
+  &__H {
+    width: 80px;
+    height: 80px;
+    background-color: $sepia;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  &__name {
+    padding-left: 20px;
+    letter-spacing: 2.6px;
+    font-weight: 700;
+    &--weight {
+      font-weight: 400;
+    }
+  }
+  &__category {
+    font-family: $font-oldStandard;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 30px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    justify-items: start;
+    padding: 0 20px 20px 0px;
+    // padding-bottom: 20px;
+    list-style: none;
+    &--service {
+      font-weight: 400;
+      color: #777777;
+    }
+    &--service:before {
+      content: "+";
+      margin-right: 4px;
+    }
+  }
+  &__contact {
+    font-family: $font-oldStandard;
+    color: black;
+    display: flex;
+    padding-bottom: 40px;
+    align-items: flex-start;
+    &--text {
+      flex-direction: column;
+      padding-left: 20px;
+    }
+    &--number {
+      padding: 5px;
+      color: #777777;
+    }
+  }
+}
+.block-introduction {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+  &--content {
+    padding: 20px;
+  }
+}
+.container-social-icons {
+  padding-bottom: 30px;
+}
+.social-icon {
+  margin: 5px;
+  padding: 8px;
+  font-size: 30px;
+  color: #777777;
+  background-color: #f8f8f8;
+}
+.social-icon:hover {
+  color: white;
+  background-color: $sepia;
+}
+.copyright {
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #f8f8f8;
+  width: 100%;
+  position: relative;
+  height: 100px;
+  &__title {
+    padding: 20px 0 25px 0;
+  }
+}
