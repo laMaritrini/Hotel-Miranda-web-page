@@ -1,0 +1,308 @@
+@import "variables.scss";
+
+.home {
+  width: 100%;
+  padding: 20px;
+  background-color: $background-dark;
+  color: white;
+  &__section {
+    padding-top: 60px;
+    letter-spacing: 2.8px;
+    font-size: 13px;
+    width: 220px;
+    padding-bottom: 25px;
+    &--grey {
+      color: #777777;
+      width: 100%;
+    }
+    &--sepia {
+      color: $sepia;
+    }
+  }
+  &__title {
+    width: 100%;
+    font-family: $font-oldStandard;
+    font-weight: 400;
+    font-size: 46px;
+    padding-bottom: 20px;
+    &--white {
+      color: white;
+    }
+  }
+  &__paragraph {
+    padding-bottom: 30px;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #777777;
+    &--color {
+      color: white;
+    }
+    &--black {
+      color: black;
+    }
+    &--footer {
+      font-size: 16px;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    display: block;
+    &--team {
+      width: 300px;
+      object-fit: cover;
+    }
+  }
+
+  &__sub-title {
+    color: black;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-family: $font-oldStandard;
+    font-weight: 400;
+    z-index: 2;
+    &--color {
+      padding-top: 20px;
+      color: white;
+    }
+    &--menu {
+      font-size: 24px;
+      padding-bottom: 15px;
+    }
+  }
+}
+.button-page {
+  background-color: inherit;
+  letter-spacing: 2.8px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px 45px;
+  border: none;
+  margin: 20px;
+  border: 1px solid #ffffff54;
+  &__sepia {
+    background-color: #bead8e;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+.button-page:hover {
+  background-color: $sepia;
+}
+.availability-check {
+  background-color: $background-black;
+
+  &__label {
+    color: white;
+    padding-bottom: 30px;
+  }
+  &__input {
+    width: 80%;
+    margin-bottom: 30px;
+    background-color: inherit;
+    color: #ffffff54;
+    border: none;
+    border-bottom: 2px solid $sepia;
+  }
+  &__input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    filter: invert(79%) sepia(34%) saturate(237%) hue-rotate(0deg)
+      brightness(85%) contrast(82%);
+  }
+}
+.container-form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us {
+  margin-top: 60px;
+  width: 100%;
+  background-color: #f9f9f9;
+  height: 800px;
+  padding: 20px;
+  margin-bottom: 400px;
+}
+.team,
+.rooms-section {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.container-icons {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin-bottom: -30px;
+}
+.team-icon {
+  position: absolute;
+  padding: 80px;
+  margin: auto;
+  display: block;
+  z-index: 1;
+}
+
+.team-icon__background {
+  color: #f8f8f8;
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+}
+.rooms-section {
+  margin-bottom: 430px;
+  &__text {
+    padding: 54px 35px;
+    background-color: $background-black;
+  }
+}
+.text-block {
+  text-align: center;
+}
+.icons-group {
+  position: absolute;
+  left: 30%;
+  top: -4%;
+  text-align: center;
+  width: 250px;
+  height: 50px;
+  margin: auto;
+  display: block;
+  background-color: white;
+
+  padding-top: 15px;
+}
+.icon-rooms {
+  width: 15px;
+  height: 15px;
+  margin-left: 15px;
+}
+.slider-images {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.block-center {
+  width: 60%;
+  height: 150px;
+  margin: auto;
+  text-align: center;
+
+  &__price {
+    padding: 0;
+    font-weight: 700;
+    font-size: 32px;
+    color: $sepia;
+    &--night {
+      font-size: 20px;
+    }
+  }
+  &__facilities {
+    width: 90%;
+    padding-bottom: 50px;
+  }
+}
+
+.video-section {
+  background-color: $background-black;
+  padding: 20px;
+}
+.facilities-section {
+  padding: 20px;
+}
+.features-block {
+  position: relative;
+  height: 150px;
+  margin-bottom: 10px;
+  &__number {
+    font-weight: 700;
+    font-size: 120px;
+    color: #2222220a;
+    position: absolute;
+    right: 10%;
+    top: 0;
+  }
+  &__img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 5%;
+    bottom: 0%;
+    transition: 0.3s;
+  }
+  &__img:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+}
+.food-section {
+  padding: 20px;
+  width: 100%;
+  &__titles {
+    margin-top: 100px;
+  }
+  &__img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+}
+.donut-container {
+  width: 114.5px;
+  height: 114.5px;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+}
+.donut-img {
+  position: absolute;
+  right: 0;
+  width: 114.5px;
+  height: 114.5px;
+  margin-right: -26px;
+}
+.menu-section {
+  display: flex;
+  padding-bottom: 20px;
+  &__text {
+    flex-direction: column;
+    padding-left: 15px;
+  }
+}
+.section-records {
+  text-align: center;
+  padding: 20px;
+  background-color: $background-black;
+  margin-bottom: 60px;
+  &__text {
+    padding-top: 10px;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    &--size {
+      font-size: 16px;
+    }
+  }
+  &__sub-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #999999;
+  }
+}
+.block-records {
+  padding: 20px;
+}

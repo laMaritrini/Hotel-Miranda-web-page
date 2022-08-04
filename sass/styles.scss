@@ -1,10 +1,9 @@
+@use "variables";
 @import "header";
 @import "home";
 @import "footer";
+@import "carousel";
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&display=swap");
-
-$font-archivo: "Archivo", sans-serif;
-$font-oldStandard: "Old Standard TT", serif;
 
 html,
 * {
