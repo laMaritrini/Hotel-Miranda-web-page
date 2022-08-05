@@ -28,6 +28,7 @@
     padding-bottom: 30px;
   }
   &__list {
+    font-family: $font-roboto;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
@@ -44,12 +45,13 @@
     }
   }
   &__contact {
-    font-family: $font-oldStandard;
+    font-family: $font-roboto;
     color: black;
     display: flex;
     padding-bottom: 40px;
     align-items: flex-start;
     &--text {
+      font-family: $font-oldStandard;
       flex-direction: column;
       padding-left: 20px;
     }
@@ -83,6 +85,7 @@
   background-color: $sepia;
 }
 .copyright {
+  font-family: $font-roboto;
   padding-left: 20px;
   font-size: 16px;
   font-weight: 700;

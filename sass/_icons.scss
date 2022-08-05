@@ -1,0 +1,52 @@
+.icons-group {
+  position: absolute;
+  left: 30%;
+  top: -4%;
+  text-align: center;
+  width: 250px;
+  height: 50px;
+  margin: auto;
+  display: block;
+  background-color: white;
+  padding-top: 15px;
+}
+.icon-rooms {
+  width: 15px;
+  height: 15px;
+  margin-left: 15px;
+}
+.team-icon {
+  position: absolute;
+  padding: 80px;
+  margin: auto;
+  display: block;
+  z-index: 1;
+}
+.container-icons {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin-bottom: -30px;
+}
+
+.team-icon__background {
+  color: #f8f8f8;
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+}
+
+.donut-container {
+  width: 114.5px;
+  height: 114.5px;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+}
+.donut-img {
+  position: absolute;
+  right: 0;
+  width: 114.5px;
+  height: 114.5px;
+  margin-right: -26px;
+}

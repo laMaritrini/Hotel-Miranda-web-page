@@ -1,98 +1,21 @@
 @import "variables.scss";
 
-.home {
+.head-main {
   width: 100%;
   padding: 20px;
   background-color: $background-dark;
   color: white;
-  &__section {
-    padding-top: 60px;
-    letter-spacing: 2.8px;
-    font-size: 13px;
-    width: 220px;
-    padding-bottom: 25px;
-    &--grey {
-      color: #777777;
-      width: 100%;
-    }
-    &--sepia {
-      color: $sepia;
-    }
-  }
-  &__title {
-    width: 100%;
-    font-family: $font-oldStandard;
-    font-weight: 400;
-    font-size: 46px;
-    padding-bottom: 20px;
-    &--white {
-      color: white;
-    }
-  }
-  &__paragraph {
-    padding-bottom: 30px;
-    padding: 0;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.9;
-    color: #777777;
-    &--color {
-      color: white;
-    }
-    &--black {
-      color: black;
-    }
-    &--footer {
-      font-size: 16px;
-    }
-  }
-  &__image {
-    width: 100%;
-    height: 400px;
-    margin: auto;
-    display: block;
-    &--team {
-      width: 300px;
-      object-fit: cover;
-    }
-  }
+}
 
-  &__sub-title {
-    color: black;
-    padding-bottom: 20px;
-    font-size: 30px;
-    font-family: $font-oldStandard;
-    font-weight: 400;
-    z-index: 2;
-    &--color {
-      padding-top: 20px;
-      color: white;
-    }
-    &--menu {
-      font-size: 24px;
-      padding-bottom: 15px;
-    }
+.image {
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  display: block;
+  &--team {
+    width: 300px;
+    object-fit: cover;
   }
-}
-.button-page {
-  background-color: inherit;
-  letter-spacing: 2.8px;
-  color: white;
-  font-size: 14px;
-  font-weight: 700;
-  padding: 20px 45px;
-  border: none;
-  margin: 20px;
-  border: 1px solid #ffffff54;
-  &__sepia {
-    background-color: #bead8e;
-    margin: 0;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-}
-.button-page:hover {
-  background-color: $sepia;
 }
 .availability-check {
   background-color: $background-black;
@@ -142,26 +65,7 @@
   text-align: center;
   margin-bottom: 40px;
 }
-.container-icons {
-  position: relative;
-  width: 300px;
-  height: 200px;
-  margin-bottom: -30px;
-}
-.team-icon {
-  position: absolute;
-  padding: 80px;
-  margin: auto;
-  display: block;
-  z-index: 1;
-}
 
-.team-icon__background {
-  color: #f8f8f8;
-  position: absolute;
-  bottom: 10%;
-  right: 20%;
-}
 .rooms-section {
   margin-bottom: 430px;
   &__text {
@@ -172,29 +76,7 @@
 .text-block {
   text-align: center;
 }
-.icons-group {
-  position: absolute;
-  left: 30%;
-  top: -4%;
-  text-align: center;
-  width: 250px;
-  height: 50px;
-  margin: auto;
-  display: block;
-  background-color: white;
 
-  padding-top: 15px;
-}
-.icon-rooms {
-  width: 15px;
-  height: 15px;
-  margin-left: 15px;
-}
-.slider-images {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
 .block-center {
   width: 60%;
   height: 150px;
@@ -261,20 +143,7 @@
     object-fit: cover;
   }
 }
-.donut-container {
-  width: 114.5px;
-  height: 114.5px;
-  position: absolute;
-  right: 0;
-  overflow: hidden;
-}
-.donut-img {
-  position: absolute;
-  right: 0;
-  width: 114.5px;
-  height: 114.5px;
-  margin-right: -26px;
-}
+
 .menu-section {
   display: flex;
   padding-bottom: 20px;
@@ -284,6 +153,7 @@
   }
 }
 .section-records {
+  font-family: $font-roboto;
   text-align: center;
   padding: 20px;
   background-color: $background-black;
