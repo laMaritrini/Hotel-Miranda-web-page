@@ -1,6 +1,6 @@
 .head-main {
   width: 100%;
-  padding: 20px;
+  padding: 20px 20px 50px;
   background-color: #333333;
   color: white;
 }
@@ -105,6 +105,10 @@
 .facilities-section {
   padding: 20px;
 }
+.facilities-section--black {
+  background-color: black;
+  color: #f9f9f9;
+}
 
 .features-block {
   position: relative;
@@ -118,6 +122,9 @@
   position: absolute;
   right: 10%;
   top: 0;
+}
+.features-block__number--darker {
+  color: #222222;
 }
 .features-block__img {
   width: 60px;

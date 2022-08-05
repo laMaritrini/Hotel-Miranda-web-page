@@ -22,9 +22,18 @@
 }
 
 .carousel-slider > .slides > .slide-features {
+  padding: 0 20px;
   flex: 0 0 100%;
   order: 1;
   background-color: white;
+  color: #fff;
+  height: 320px;
+}
+
+.carousel-slider > .slides > .slide-features--color {
+  flex: 0 0 100%;
+  order: 1;
+  background-color: #292929;
   color: #fff;
   height: 320px;
 }
@@ -131,7 +140,7 @@
 .carousel-slider > .slider-nav {
   position: absolute;
   width: 100%;
-  bottom: -60px;
+  bottom: -20px;
   display: flex;
   justify-content: center;
   align-items: center;

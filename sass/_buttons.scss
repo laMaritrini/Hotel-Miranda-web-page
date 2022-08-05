@@ -18,3 +18,14 @@
 .button-page:hover {
   background-color: $sepia;
 }
+.head-main__buttons {
+  font-weight: 700;
+  margin-top: 10px;
+  color: black;
+  float: right;
+  background-color: white;
+  padding: 15px;
+  &--sepia {
+    color: $sepia;
+  }
+}

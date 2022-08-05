@@ -1,0 +1,28 @@
+.presentation {
+  padding: 20px;
+  margin-top: 30px;
+}
+.restaurant {
+  padding: 20px;
+}
+.counter {
+  padding: 20px;
+  &__number {
+    font-family: $font-oldStandard;
+    font-size: 60px;
+  }
+  &__text {
+    font-family: $font-roboto;
+    font-size: 16px;
+  }
+}
+.fa-arrow-right-long {
+  color: #dcdcdc;
+  font-size: 22px;
+}
+.container-fun-facts {
+  padding: 0 10px 40px 30px;
+  display: grid;
+  grid-template-columns: 45% 45% 10%;
+  align-items: center;
+}
