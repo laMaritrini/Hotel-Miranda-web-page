@@ -20,7 +20,7 @@
   order: 1;
   background-color: white;
   color: #fff;
-  height: 600px;
+  height: 650px;
 }
 .carousel-slider > .slides > .slide-features {
   padding: 0 20px;
@@ -64,7 +64,7 @@
 .carousel-slider > label.break-next {
   position: absolute;
   right: 30px;
-  bottom: 10%;
+  bottom: 5%;
   height: 30px;
   width: 30px;
   transform: translateY(-50%);
@@ -84,8 +84,8 @@
 }
 .carousel-slider > label.break-prev {
   position: absolute;
-  right: 20%;
-  bottom: 10%;
+  right: 30%;
+  bottom: 5%;
   height: 30px;
   width: 30px;
   transform: translateY(-50%);

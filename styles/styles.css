@@ -434,7 +434,7 @@ hr {
   order: 1;
   background-color: white;
   color: #fff;
-  height: 600px;
+  height: 650px;
 }
 
 .carousel-slider > .slides > .slide-features {
@@ -482,7 +482,7 @@ hr {
 .carousel-slider > label.break-next {
   position: absolute;
   right: 30px;
-  bottom: 10%;
+  bottom: 5%;
   height: 30px;
   width: 30px;
   transform: translateY(-50%);
@@ -503,8 +503,8 @@ hr {
 
 .carousel-slider > label.break-prev {
   position: absolute;
-  right: 20%;
-  bottom: 10%;
+  right: 30%;
+  bottom: 5%;
   height: 30px;
   width: 30px;
   transform: translateY(-50%);
@@ -804,23 +804,34 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
   font-size: 16px;
 }
 
+.container-duplex-room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .icons-group {
-  position: absolute;
-  left: 30%;
-  top: -4%;
-  text-align: center;
-  width: 250px;
-  height: 50px;
-  margin: auto;
-  display: block;
+  width: 70%;
   background-color: white;
-  padding-top: 15px;
+  padding: 7px 0;
+  margin-bottom: -17px;
+  z-index: 1;
+}
+
+.icons-group-room {
+  width: 70%;
+  text-align: center;
+  background-color: white;
+  padding: 7px 0;
+  margin-top: -17px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  margin-bottom: 10px;
 }
 
 .icon-rooms {
-  width: 15px;
-  height: 15px;
-  margin-left: 15px;
+  width: 7%;
+  height: 7%;
+  margin-left: 5%;
 }
 
 .team-icon {
@@ -862,7 +873,7 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
 }
 
 .icon-category {
-  width: 60px;
+  width: 50%;
 }
 .icon-category__name {
   padding-top: 15px;
@@ -876,16 +887,16 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
 }
 
 .container-icons-about {
-  margin: 10px;
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .about-icons {
-  width: 170px;
-  height: 170px;
-  margin: 30px;
-  padding: 30px 20px 20px 10px;
+  width: 40%;
+  height: 40%;
+  margin: 5%;
+  padding: 10px 20px 20px 20px;
   text-align: center;
 }
 
@@ -921,10 +932,31 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
 }
 
 .container-fun-facts {
-  padding: 0 10px 40px 30px;
   display: grid;
-  grid-template-columns: 45% 45% 10%;
+  grid-template-columns: 30% 60% 10%;
   align-items: center;
+}
+
+.rooms-list {
+  padding: 20px;
+}
+
+.block-center-room {
+  margin-left: 15%;
+  width: 70%;
+  text-align: center;
+  padding: 40px 0 60px;
+}
+
+.inline {
+  display: inline;
+}
+
+.booking {
+  padding-left: 3%;
+  font-weight: 700;
+  font-size: 20px;
+  color: #bdbdbd;
 }
 
 html,

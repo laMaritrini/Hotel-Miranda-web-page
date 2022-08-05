@@ -1,0 +1,23 @@
+.rooms-list {
+  padding: 20px;
+}
+
+.block-center-room {
+  margin-left: 15%;
+  width: 70%;
+  text-align: center;
+  padding: 40px 0 60px;
+}
+
+.inline {
+  display: inline;
+}
+
+.booking {
+  padding-left: 3%;
+  font-weight: 700;
+  font-size: 20px;
+  color: #bdbdbd;
+}
+
+/*# sourceMappingURL=rooms.css.map */
