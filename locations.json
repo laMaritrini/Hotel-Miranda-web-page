@@ -1,0 +1,79 @@
+{
+  "locations": [
+    {
+      "lat": 36.621031798420155,
+      "lng": -4.49623326888524,
+      "name": "Andalucía",
+      "comunidad": 0
+    },
+
+    {
+      "lat": 36.5144613597142,
+      "lng": -4.638791991537523,
+      "name": " Andalucía",
+      "comunidad": 0
+    },
+    {
+      "lat": 27.758038962138382,
+      "lng": -15.566572750275627,
+      "name": " Canarias",
+      "comunidad": 4
+    },
+    {
+      "lat": 28.355297057619204,
+      "lng": -13.878716576738322,
+      "name": " Canarias",
+      "comunidad": 4
+    },
+    {
+      "lat": 41.828025936421525,
+      "lng": 3.0848639818443946,
+      "name": "Cataluña",
+      "comunidad": 8
+    },
+    {
+      "lat": 41.82544716665779,
+      "lng": 3.0789740553841107,
+      "name": "Cataluña",
+      "comunidad": 8
+    },
+    {
+      "lat": 43.36931894604953,
+      "lng": -8.392517689571964,
+      "name": "Galicia",
+      "comunidad": 11
+    },
+    {
+      "lat": 42.39957389819846,
+      "lng": -8.817410683503802,
+      "name": "Galicia",
+      "comunidad": 11
+    },
+    {
+      "lat": 40.413712695460674,
+      "lng": -3.6711455816917886,
+      "name": "Madrid, Comunidad de",
+      "comunidad": 12
+    },
+    {
+      "lat": 40.422337158255964,
+      "lng": -3.669849898610936,
+      "name": "Madrid, Comunidad de",
+      "comunidad": 12
+    },
+    {
+      "lat": 40.42739376579836,
+      "lng": -3.7142062351779046,
+      "name": "Madrid, Comunidad de",
+      "comunidad": 12
+    },
+    {
+      "lat": 40.42006058574931,
+      "lng": -3.6887875226964026,
+      "name": "Madrid, Comunidad de",
+      "comunidad": 12
+    }
+  ]
+}
+
+
