@@ -13,3 +13,100 @@
 .custom-map-control-button:hover {
   background: rgb(235, 235, 235);
 }
+.title-community {
+  margin: 20px 20px 0;
+  font-weight: 600;
+}
+.direction-title {
+  margin-left: 20px;
+
+  &__input {
+    margin: 10px 10px 0 20px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid grey;
+  }
+  &__submit {
+    background-color: #bead8e;
+    border: none;
+    padding: 4px;
+    border-radius: 3px;
+    color: white;
+    &:active {
+      background-color: white;
+      color: #bead8e;
+    }
+  }
+}
+.google-map {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.find-location {
+  background-color: #bead8e;
+
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+  &:active {
+    background-color: white;
+    color: #bead8e;
+  }
+}
+.select-community {
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+.direction {
+  font-weight: 600;
+  margin-left: 20px;
+  color: grey;
+}
+.distance {
+  margin: 10px 0 20px 20px;
+  color: grey;
+  font-style: italic;
+}
+.block-contact {
+  position: relative;
+  padding: 50px;
+
+  &__number {
+    font-weight: 700;
+    font-size: 150px;
+    color: #2222220a;
+    position: absolute;
+    right: 10%;
+    top: 0;
+  }
+}
+.contact-form {
+  padding-left: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 40px;
+  & input {
+    padding: 10px 40px;
+    margin: 20px;
+  }
+  &__button {
+    color: white;
+    background-color: #bead8e;
+    border: none;
+    width: fit-content;
+    padding: 20px 60px;
+  }
+}
+.contact-icon {
+  position: absolute;
+  left: 18%;
+  padding: 30px 2px;
+  color: #bead8e;
+}

@@ -45,6 +45,7 @@
   display: none;
 }
 
+
 .header {
   background-color: white;
   padding: 15px;
@@ -108,4 +109,7 @@
   list-style-type: none;
   font-weight: 600;
   line-height: 1.9;
+}
+@media only screen and (min-width: 600px) {
+  
 }
