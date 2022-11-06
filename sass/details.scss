@@ -1,0 +1,91 @@
+.details-section {
+  padding: 20px;
+}
+.check-availability {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    &--title {
+      padding: 15px 0;
+      font-weight: 900;
+      font-size: 13px;
+    }
+    & input {
+      padding: 15px;
+      background-color: #f8f8f8;
+      border: none;
+      color: #777777;
+    }
+  }
+}
+.founder {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__paragraph {
+    text-align: center;
+    padding-bottom: 30px;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #777777;
+  }
+}
+.founder-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.cancellation {
+  padding-bottom: 40px;
+  & p {
+    padding: 20px 0;
+  }
+}
+.related {
+  padding: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  .details-section {
+    padding: 20px 160px;
+  }
+  .image-detail {
+    width: 80%;
+    height: 600px;
+  }
+  .check-title {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+  .check-availability__form {
+    font-size: 30px;
+    & > input {
+      font-size: 28px;
+    }
+  }
+  .amenities-offers__block {
+    font-size: 26px;
+    padding-bottom: 20px;
+    > img {
+      width: 35px;
+    }
+  }
+  .founder__paragraph {
+    font-size: 23px;
+  }
+  .founder-pic {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+}

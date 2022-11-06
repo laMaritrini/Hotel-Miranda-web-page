@@ -1,0 +1,30 @@
+@import "variables";
+@import "header";
+@import "home";
+@import "footer";
+@import "carousel";
+@import "buttons";
+@import "typography";
+@import "icons";
+@import "about-us";
+@import "rooms";
+@import "contact";
+@import "offers";
+@import "details";
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $font-archivo;
+  min-width: 320px;
+  background-color: rgb(255, 252, 252);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}

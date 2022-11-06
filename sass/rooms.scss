@@ -1,0 +1,39 @@
+.rooms-list {
+  padding: 20px;
+}
+.block-center-room {
+  margin-left: 15%;
+  width: 70%;
+  text-align: center;
+  padding: 40px 0 60px;
+}
+.inline {
+  display: inline;
+}
+.booking {
+  padding-left: 3%;
+  font-weight: 700;
+  font-size: 20px;
+  color: #bdbdbd;
+}
+
+.room-detail {
+  width: 80%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .room-detail {
+    width: 90%;
+  }
+  .rooms-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .room-block {
+    width: 600px;
+  }
+}

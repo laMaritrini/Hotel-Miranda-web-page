@@ -1,0 +1,273 @@
+.head-main {
+  width: 100%;
+  padding: 20px 20px 50px;
+  background-color: #333333;
+  color: white;
+}
+
+.image {
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  display: block;
+}
+.image--team {
+  width: 300px;
+  object-fit: cover;
+}
+
+.availability-check {
+  background-color: #222222;
+}
+.availability-check__label {
+  color: white;
+  padding-bottom: 30px;
+}
+.availability-check__input {
+  width: 80%;
+  margin-bottom: 30px;
+  background-color: inherit;
+  color: rgba(255, 255, 255, 0.3294117647);
+  border: none;
+  border-bottom: 2px solid #bead8e;
+}
+.availability-check__input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  filter: invert(79%) sepia(34%) saturate(237%) hue-rotate(0deg) brightness(85%) contrast(82%);
+}
+
+.container-form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us {
+  margin-top: 60px;
+  width: 100%;
+  background-color: #f9f9f9;
+  height: 800px;
+  padding: 20px;
+  margin-bottom: 400px;
+}
+
+.team,
+.rooms-section {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.rooms-section {
+  margin-bottom: 430px;
+}
+.rooms-section__text {
+  padding: 54px 35px;
+  background-color: #222222;
+}
+
+.text-block {
+  text-align: center;
+}
+
+.block-center {
+  width: 60%;
+  height: 150px;
+  margin: auto;
+  text-align: center;
+}
+.block-center__price {
+  padding: 0;
+  font-weight: 700;
+  font-size: 32px;
+  color: #bead8e;
+}
+.block-center__price--night {
+  font-size: 20px;
+}
+.block-center__facilities {
+  width: 90%;
+  padding-bottom: 50px;
+}
+
+.video-section {
+  background-color: #222222;
+  padding: 20px;
+}
+
+.facilities-section {
+  padding: 20px;
+}
+.facilities-section--black {
+  background-color: black;
+  color: #f9f9f9;
+}
+
+.features-block {
+  position: relative;
+  height: 150px;
+  margin-bottom: 10px;
+}
+.features-block__number {
+  font-weight: 700;
+  font-size: 120px;
+  color: rgba(34, 34, 34, 0.0392156863);
+  position: absolute;
+  right: 10%;
+  top: 0;
+}
+.features-block__number--darker {
+  color: #222222;
+}
+.features-block__img {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 5%;
+  bottom: 0%;
+  transition: 0.3s;
+}
+.features-block__img:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.food-section {
+  padding: 20px;
+  width: 100%;
+}
+.food-section__titles {
+  margin-top: 100px;
+}
+.food-section__img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.menu-section {
+  display: flex;
+  padding-bottom: 20px;
+}
+.menu-section__text {
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.section-records {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #222222;
+  margin-bottom: 60px;
+}
+.section-records__text {
+  padding-top: 10px;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+}
+.section-records__text--size {
+  font-size: 16px;
+}
+.section-records__sub-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #999999;
+}
+
+.block-records {
+  padding: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  .head-main, .text-block {
+    padding: 20px 160px;
+  }
+  .availability-check {
+    padding: 20px 160px;
+  }
+  .availability-check__input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 170px;
+    width: 20px;
+    height: 20px;
+    filter: invert(79%) sepia(34%) saturate(237%) hue-rotate(0deg) brightness(85%) contrast(82%);
+  }
+  .video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .facilities-section,
+.food-section {
+    padding: 20px 160px;
+  }
+  .section-records {
+    display: flex;
+    justify-content: space-around;
+  }
+  .about-us {
+    padding: 20px 160px;
+  }
+  .images-text {
+    display: flex;
+  }
+  .container-icons {
+    height: 140px;
+  }
+  .team-icon {
+    padding: 45px;
+  }
+  .rooms-section {
+    width: 100%;
+    height: 655px;
+    padding: 20px 160px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+  }
+  .rooms-section__text {
+    width: 27%;
+    margin-left: 30px;
+    height: 80%;
+  }
+  .image {
+    height: 500px;
+  }
+  .image-home {
+    width: 60%;
+    object-fit: cover;
+  }
+  .availability-check__input {
+    font-size: 26px;
+  }
+  .availability-check__label {
+    font-size: 28px;
+  }
+  .video-home {
+    width: 70%;
+    height: 600px;
+    padding: 40px;
+  }
+  .menu-section {
+    padding-bottom: 100px;
+  }
+  .block-center__price {
+    font-size: 80px;
+  }
+  .block-center__price--night {
+    font-size: 45px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

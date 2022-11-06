@@ -1,0 +1,108 @@
+.container-duplex-room {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icons-group {
+  width: 70%;
+  background-color: white;
+  padding: 7px 0;
+  margin-bottom: -17px;
+  z-index: 1;
+}
+
+.icons-group-room {
+  width: 70%;
+  text-align: center;
+  background-color: white;
+  padding: 7px 0;
+  margin-top: -17px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  margin-bottom: 10px;
+}
+.icon-rooms {
+  width: 7%;
+  height: 7%;
+  margin-left: 5%;
+}
+.team-icon {
+  position: absolute;
+  padding: 80px;
+  margin: auto;
+  display: block;
+  z-index: 1;
+}
+.container-icons {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin-bottom: -30px;
+}
+
+.team-icon__background {
+  color: #f8f8f8;
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+}
+
+.donut-container {
+  width: 114.5px;
+  height: 114.5px;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+}
+.donut-img {
+  position: absolute;
+  right: 0;
+  width: 114.5px;
+  height: 114.5px;
+  margin-right: -26px;
+}
+.icon-category {
+  width: 50%;
+  &__name {
+    padding-top: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2.4px;
+  }
+}
+.icon-category:hover {
+  filter: brightness(200%);
+}
+.container-icons-about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.about-icons {
+  width: 40%;
+  height: 40%;
+  margin: 5%;
+  padding: 10px 20px 20px 20px;
+  text-align: center;
+}
+.about-icons:hover {
+  background-color: $sepia;
+  color: white;
+}
+@media only screen and (min-width: 600px) {
+  .team-icon {
+    padding: 45px;
+  }
+  .container-icons {
+    height: 140px;
+  }
+  .container-icons-about {
+    width: 100%;
+  }
+  .about-icons {
+    width: 15%;
+  }
+  .icons-group-room {
+    width: 50%;
+  }
+}

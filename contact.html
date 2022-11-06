@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Miranda | Contact</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="./contact.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b519a5fd3c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <p class="header__sub-title">We Make You Feel Comfortable</p>
+
+      <div class="respmenu">
+        <input type="checkbox" />
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark"></i>
+        <nav class="header__nav">
+          <ul class="list">
+            <li><a href="./about-us.html"> About Us</a></li>
+            <li><a href="./rooms.html">Rooms</a></li>
+            <li><a href="./offers.html">Offers</a></li>
+            <li><a href="./contact.html">Contact </a></li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="header__nav-desktop">
+        <a class="header__a" href="./about-us.html"> About Us</a>
+        <a class="header__a" href="./rooms.html">Rooms</a>
+        <a class="header__a" href="./offers.html">Offers</a>
+        <a class="header__a" href="./contact.html">Contact </a>
+      </nav>
+      <div class="header__title">
+        <a href="./index.html">
+          <div class="logo">
+            <h1 class="logo__H">H</h1>
+            <h1 class="logo__title">HOTEL MIRANDA</h1>
+          </div></a
+        >
+      </div>
+    </header>
+    <section class="head-main">
+      <h4 class="section">THE ULTIMATE LUXURY</h4>
+      <h2 class="title">New Details</h2>
+      <div class="head-main__buttons">
+        <a href="./index.html">Home</a>
+        <span>|</span>
+        <a class="head-main__buttons--sepia" href="">Blog</a>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="block-contact">
+        <p class="block-contact__number">01</p>
+        <img src="./images/map.svg" alt="" />
+        <div>
+          <p>Hotel Address</p>
+          <p class="footer__contact footer__contact--number">
+            19/A, City Hall Tower <br />
+            New York, NYC
+          </p>
+        </div>
+      </div>
+      <div class="block-contact">
+        <p class="block-contact__number">02</p>
+        <img src="./images/phone.svg" alt="" />
+        <div>
+          <p>Phone Number</p>
+          <p class="footer__contact footer__contact--number">
+            +987 876 765 76 577
+          </p>
+        </div>
+      </div>
+      <div class="block-contact">
+        <p class="block-contact__number">03</p>
+        <img src="./images/email.svg" alt="" />
+        <div>
+          <p>Email</p>
+          <p class="footer__contact footer__contact--number">
+            mirandahotel@webmail.com
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="google-section">
+      <div class="title-community">Comunidades Autonomas:</div>
+      <select
+        name="comunidadesAuto"
+        id="comunidadesAuto"
+        class="select-community"
+      >
+        <option value="">Select one...</option>
+      </select>
+      <div id="map" class="google-map"></div>
+      <label class="direction-title" for="myDirection"
+        >Dirección de usuario</label
+      ><br />
+      <input
+        class="direction-title__input"
+        type="text"
+        id="input"
+        placeholder="Enter a location"
+      />
+      <input
+        class="direction-title__submit"
+        type="button"
+        id="submit"
+        value="Submit"
+      />
+      <button class="find-location" style="margin: 20px" id="buttonRequest">
+        Find my nearest locations
+      </button>
+      <ul id="response"></ul>
+    </section>
+    <section>
+      <form action="" class="contact-form">
+        <label class="input-contact" for="">
+          <input type="text" placeholder="Your full name" />
+          <i class="fa-solid fa-user contact-icon"></i>
+        </label>
+        <label class="input-contact" for="">
+          <input type="number" placeholder="Add phone number" />
+          <i class="fa-solid fa-phone contact-icon"></i>
+        </label>
+        <label class="input-contact" for="">
+          <input type="email" placeholder="Enter email address" />
+          <i class="fa-solid fa-envelope contact-icon"></i>
+        </label>
+        <label class="input-contact" for="">
+          <input type="text" placeholder="Enter subject" />
+          <i class="fa-solid fa-book contact-icon"></i>
+        </label>
+        <label class="input-contact" for="">
+          <textarea
+            type="text"
+            width="400px"
+            rows="15"
+            cols="22"
+            placeholder="Enter your message"
+          ></textarea>
+          <i class="fa-solid fa-pencil contact-icon contact-icon--textarea"></i>
+        </label>
+        <button class="contact-form__button">SEND</button>
+      </form>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="block-introduction">
+          <h2 class="footer__H">H</h2>
+          <h2 class="footer__name">
+            HOTEL <br />
+            <span class="footer__name--weight">MIRANDA</span>
+          </h2>
+        </div>
+        <div class="block-introduction--content">
+          <p class="paragraph paragraph--footer">
+            Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
+            eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
+          </p>
+          <div class="container-social-icons">
+            <i class="fa-brands fa-square-facebook social-icon"></i>
+            <i class="fa-brands fa-square-twitter social-icon"></i>
+            <i class="fa-brands fa-square-behance social-icon"></i>
+            <i class="fa-brands fa-linkedin social-icon"></i>
+            <i class="fa-brands fa-square-youtube social-icon"></i>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__category">Services.</h4>
+          <ul class="footer__list">
+            <li class="footer__list footer__list--service">Restaurant & Bar</li>
+            <li class="footer__list footer__list--service">Swimming Pool</li>
+            <li class="footer__list footer__list--service">Wellness & Spa</li>
+            <li class="footer__list footer__list--service">Restaurant</li>
+            <li class="footer__list footer__list--service">Conference Room</li>
+            <li class="footer__list footer__list--service">
+              Cocktail Party House
+            </li>
+            <li class="footer__list footer__list--service">Gaming Zone</li>
+            <li class="footer__list footer__list--service">Marriage Party</li>
+            <li class="footer__list footer__list--service">Party Planning</li>
+            <li class="footer__list footer__list--service">Tour Consultancy</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__category">Contact Us.</h4>
+          <div class="footer__contact">
+            <img src="./images/phone.svg" alt="" />
+            <div class="footer__contact footer__contact--text">
+              <p>Phone Number</p>
+              <p class="footer__contact footer__contact--number">
+                +987 876 765 76 577
+              </p>
+            </div>
+          </div>
+          <div class="footer__contact">
+            <img src="./images/email.svg" alt="" />
+            <div class="footer__contact footer__contact--text">
+              <p>Email</p>
+              <p class="footer__contact footer__contact--number">
+                mirandahotel@webmail.com
+              </p>
+            </div>
+          </div>
+          <div class="footer__contact">
+            <img src="./images/map.svg" alt="" />
+            <div class="footer__contact footer__contact--text">
+              <p>Hotel Address</p>
+              <p class="footer__contact footer__contact--number">
+                19/A, City Hall Tower <br />
+                New York, NYC
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="copyright__title">Copyright By@Example - 2020</p>
+        <p>Terms of use | Privacy Environmental Policy</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4e6jCqj1DHHfs8S-YYJk7VLXRX1ZhwUw&callback=initMap"
+    ></script>
+  </body>
+</html>
