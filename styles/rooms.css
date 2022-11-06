@@ -20,4 +20,25 @@
   color: #bdbdbd;
 }
 
+.room-detail {
+  width: 80%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .room-detail {
+    width: 90%;
+  }
+  .rooms-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .room-block {
+    width: 600px;
+  }
+}
+
 /*# sourceMappingURL=rooms.css.map */

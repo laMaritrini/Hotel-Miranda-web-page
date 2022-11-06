@@ -15,45 +15,39 @@
   <body>
     <header class="header">
       <p class="header__sub-title">We Make You Feel Comfortable</p>
-      <div class="header__icons">
-        <img
-          src="./images/user.svg"
-          alt="user"
-          width="10px"
-          class="user-icon"
-        />
-        <form action="" class="input-wrapper">
-          <input type="search" class="input" />
-          <i class="fa-solid fa-magnifying-glass input-icon"></i>
-        </form>
-      </div>
-      <div class="header__title">
-        <div class="logo">
-          <h1 class="logo__H">H</h1>
-          <h1 class="logo__title">HOTEL MIRANDA</h1>
-        </div>
-      </div>
       <div class="respmenu">
-      <input type="checkbox" />
-      <i class="fa-solid fa-bars"></i>
-      <i class="fa-solid fa-xmark"></i>
-      <nav class="header__nav">
-        <ul class="list">
+        <input type="checkbox" />
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark"></i>
+        <nav class="header__nav">
+          <ul class="list">
             <li><a href="./about-us.html"> About Us</a></li>
             <li><a href="./rooms.html">Rooms</a></li>
             <li><a href="./offers.html">Offers</a></li>
             <li> <a href="./contact.html">Contact </a> </li>
-        </ul>
-      </nav>
-    </div>
+          </ul>
+        </nav>
+      </div>
+          <nav class="header__nav-desktop">
+            <a class="header__a" href="./about-us.html"> About Us</a>
+            <a class="header__a" href="./rooms.html">Rooms</a>
+            <a class="header__a" href="./offers.html">Offers</a>
+             <a class="header__a" href="./contact.html">Contact </a> 
+        </nav>
+      <div class="header__title">
+       <a href="./index.html">  <div class="logo">
+          <h1 class="logo__H">H</h1>
+          <h1 class="logo__title">HOTEL MIRANDA</h1>
+        </div></a>
+      </div>
     </header>
 
     <section class="head-main">
       <h4 class="section">THE ULTIMATE LUXURY EXPERIENCE</h4>
       <h2 class="title">The Perfect Base For You</h2>
       <div>
-        <button class="button-page">TAKE A TOUR</button>
-        <button class="button-page">LEARN MORE</button>
+       <a href="./about-us.html"> <button class="button-page">TAKE A TOUR</button></a>
+        <a href="./contact.html"><button class="button-page">LEARN MORE</button></a>
       </div>
     </section>
     <section class="availability-check">
@@ -75,6 +69,7 @@
     </section>
 
     <section class="about-us">
+      <div>
       <h4 class="section section--grey">ABOUT US</h4>
       <h2 class="title">Discover Our Underground.</h2>
       <p class="paragraph">
@@ -83,9 +78,11 @@
         incidunt cupiditate tenetur illum aperiam repudiandae? Rerum nulla cum
         placeat dolorem.
       </p>
-      <button class="button-page button-page__sepia">BOOK NOW</button>
+    <a href="./offers.html">  <button class="button-page button-page__sepia">BOOK NOW</button></a>
+      </div>
+      <div class="images-text">
       <img
-        class="image image--team"
+        class="image image--team image-home"
         src="./images/photos/team.jpg"
         alt=""
       />
@@ -104,10 +101,11 @@
           eiusmod tempor.
         </p>
       </div>
+      </div>
     </section>
     <section>
       <div class="rooms-section">
-        <img class="image" src="./images/photos/luxury-room.jpg" alt="" />
+        <img class="image image-home" src="./images/photos/luxury-room.jpg" alt="" />
         <div class="rooms-section__text">
           <img class="icon-booking" src="./images/booking.svg" alt="booking" />
           <h3 class="sub-title sub-title--color">Luxury Room</h3>
@@ -295,6 +293,7 @@
         commodo consequat you have to understand this.
       </p>
       <iframe
+      class="video-home"
         width="100%"
         height="270px"
         src="https://www.youtube.com/embed/Bu3Doe45lcU?start=25&end=75"
@@ -303,7 +302,7 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
-      <button class="button-page button-page__sepia">BOOK NOW</button>
+     <a href="./rooms.html"> <button class="button-page button-page__sepia">BOOK NOW</button></a>
     </section>
     <section class="facilities-section">
       <div class="block-center block-center__facilities">
@@ -521,7 +520,6 @@
               Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
               eiusmod tempor.
             </p>
-            <!-- <i class="fa-solid fa-arrow-right-long"></i> -->
           </div>
         </div>
         </div>

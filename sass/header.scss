@@ -45,14 +45,11 @@
   display: none;
 }
 
-
 .header {
   background-color: white;
   padding: 15px;
   display: flex;
-  flex-direction: row-reverse;
   width: 100%;
-  justify-content: space-between;
   align-items: center;
 
   &__icons {
@@ -63,6 +60,13 @@
   &__nav {
     padding-top: 50px;
   }
+  &__nav-desktop {
+    display: none;
+  }
+  &__title {
+   padding-left: 30%;
+  }
+
 }
 .input-wrapper {
   position: relative;
@@ -96,7 +100,7 @@
     display: flex;
     font-size: 15px;
     align-items: center;
-    margin-left: 10%;
+    margin-left: 20%;
   }
 }
 .user-icon {
@@ -111,5 +115,30 @@
   line-height: 1.9;
 }
 @media only screen and (min-width: 600px) {
-  
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 40px;
+    &__title {
+   padding-left: 10%;
+    }
+    &__nav-desktop {
+      display: flex;
+      width: 70%;
+      justify-content: space-evenly;
+    }
+
+    &__a {
+      font-weight: 600;
+      font-size: 25px;
+    }
+  }
+  .respmenu {
+    display: none;
+  }
+  .logo__title{
+    font-size: 25px;
+  }
+
 }

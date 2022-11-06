@@ -49,9 +49,7 @@
   background-color: white;
   padding: 15px;
   display: flex;
-  flex-direction: row-reverse;
   width: 100%;
-  justify-content: space-between;
   align-items: center;
 }
 .header__icons {
@@ -61,6 +59,12 @@
 }
 .header__nav {
   padding-top: 50px;
+}
+.header__nav-desktop {
+  display: none;
+}
+.header__title {
+  padding-left: 30%;
 }
 
 .input-wrapper {
@@ -98,7 +102,7 @@
   display: flex;
   font-size: 15px;
   align-items: center;
-  margin-left: 10%;
+  margin-left: 20%;
 }
 
 .user-icon {
@@ -111,6 +115,33 @@
   list-style-type: none;
   font-weight: 600;
   line-height: 1.9;
+}
+
+@media only screen and (min-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 40px;
+  }
+  .header__title {
+    padding-left: 10%;
+  }
+  .header__nav-desktop {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+  }
+  .header__a {
+    font-weight: 600;
+    font-size: 25px;
+  }
+  .respmenu {
+    display: none;
+  }
+  .logo__title {
+    font-size: 25px;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

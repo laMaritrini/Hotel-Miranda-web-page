@@ -17,24 +17,7 @@
   <body>
     <header class="header">
       <p class="header__sub-title">We Make You Feel Comfortable</p>
-      <div class="header__icons">
-        <img
-          src="./images/user.svg"
-          alt="user"
-          width="10px"
-          class="user-icon"
-        />
-        <form action="" class="input-wrapper">
-          <input type="search" class="input" />
-          <i class="fa-solid fa-magnifying-glass input-icon"></i>
-        </form>
-      </div>
-      <div class="header__title">
-        <div class="logo">
-          <h1 class="logo__H">H</h1>
-          <h1 class="logo__title">HOTEL MIRANDA</h1>
-        </div>
-      </div>
+
       <div class="respmenu">
         <input type="checkbox" />
         <i class="fa-solid fa-bars"></i>
@@ -48,6 +31,20 @@
           </ul>
         </nav>
       </div>
+      <nav class="header__nav-desktop">
+        <a class="header__a" href="./about-us.html"> About Us</a>
+        <a class="header__a" href="./rooms.html">Rooms</a>
+        <a class="header__a" href="./offers.html">Offers</a>
+        <a class="header__a" href="./contact.html">Contact </a>
+      </nav>
+      <div class="header__title">
+        <a href="./index.html">
+          <div class="logo">
+            <h1 class="logo__H">H</h1>
+            <h1 class="logo__title">HOTEL MIRANDA</h1>
+          </div></a
+        >
+      </div>
     </header>
     <section class="head-main">
       <h4 class="section">THE ULTIMATE LUXURY</h4>
@@ -58,7 +55,7 @@
         <a class="head-main__buttons--sepia" href="">Blog</a>
       </div>
     </section>
-    <section>
+    <section class="contact-section">
       <div class="block-contact">
         <p class="block-contact__number">01</p>
         <img src="./images/map.svg" alt="" />
@@ -91,7 +88,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="google-section">
       <div class="title-community">Comunidades Autonomas:</div>
       <select
         name="comunidadesAuto"
@@ -123,25 +120,31 @@
     </section>
     <section>
       <form action="" class="contact-form">
-        <label for="">
+        <label class="input-contact" for="">
           <input type="text" placeholder="Your full name" />
           <i class="fa-solid fa-user contact-icon"></i>
         </label>
-        <label for="">
+        <label class="input-contact" for="">
           <input type="number" placeholder="Add phone number" />
           <i class="fa-solid fa-phone contact-icon"></i>
         </label>
-        <label for="">
+        <label class="input-contact" for="">
           <input type="email" placeholder="Enter email address" />
           <i class="fa-solid fa-envelope contact-icon"></i>
         </label>
-        <label for="">
+        <label class="input-contact" for="">
           <input type="text" placeholder="Enter subject" />
           <i class="fa-solid fa-book contact-icon"></i>
         </label>
-        <label for="">
-          <input type="text" placeholder="Enter message" width="400px" />
-          <i class="fa-solid fa-pencil contact-icon"></i>
+        <label class="input-contact" for="">
+          <textarea
+            type="text"
+            width="400px"
+            rows="15"
+            cols="22"
+            placeholder="Enter your message"
+          ></textarea>
+          <i class="fa-solid fa-pencil contact-icon contact-icon--textarea"></i>
         </label>
         <button class="contact-form__button">SEND</button>
       </form>

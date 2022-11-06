@@ -25,3 +25,36 @@
   grid-template-columns: 30% 60% 10%;
   align-items: center;
 }
+
+@media only screen and (min-width: 600px) {
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .restaurant,
+  .facilities-section,
+  .counter {
+    padding: 20px 160px;
+  }
+  .about-video {
+    width: 70%;
+    height: 600px;
+  }
+  .image-about {
+    width: 70%;
+  }
+  .container-fun-facts {
+    width: 60%;
+    grid-template-columns: 30% 40% 20%;
+  }
+  .counter__number {
+    font-size: 80px;
+  }
+  .block-container-fun-facts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -29,3 +29,13 @@
     color: $sepia;
   }
 }
+
+@media only screen and (min-width: 600px) {
+.button-page{
+   font-size: 24px;
+    padding: 40px 65px;
+}
+.head-main__buttons {
+  font-size: 24px;
+}
+}

@@ -15,24 +15,6 @@
   <body>
     <header class="header">
       <p class="header__sub-title">We Make You Feel Comfortable</p>
-      <div class="header__icons">
-        <img
-          src="./images/user.svg"
-          alt="user"
-          width="10px"
-          class="user-icon"
-        />
-        <form action="" class="input-wrapper">
-          <input type="search" class="input" />
-          <i class="fa-solid fa-magnifying-glass input-icon"></i>
-        </form>
-      </div>
-      <div class="header__title">
-        <div class="logo">
-          <h1 class="logo__H">H</h1>
-          <h1 class="logo__title">HOTEL MIRANDA</h1>
-        </div>
-      </div>
       <div class="respmenu">
         <input type="checkbox" />
         <i class="fa-solid fa-bars"></i>
@@ -45,6 +27,18 @@
             <li><a href="./contact.html">Contact </a></li>
           </ul>
         </nav>
+      </div>
+      <nav class="header__nav-desktop">
+        <a class="header__a" href="./about-us.html"> About Us</a>
+        <a class="header__a" href="./rooms.html">Rooms</a>
+        <a class="header__a" href="./offers.html">Offers</a>
+        <a class="header__a" href="./contact.html">Contact </a>
+      </nav>
+      <div class="header__title">
+       <a href="./index.html"> <div class="logo">
+          <h1 class="logo__H">H</h1>
+          <h1 class="logo__title">HOTEL MIRANDA</h1>
+        </div></a>
       </div>
     </header>
     <section class="head-main">
@@ -59,6 +53,7 @@
 
     <section class="presentation">
       <iframe
+        class="about-video"
         width="100%"
         height="315"
         src="https://www.youtube.com/embed/Bu3Doe45lcU"
@@ -91,7 +86,11 @@
       </div>
     </section>
     <section class="restaurant">
-      <img class="image" src="./images/photos/view-restaurant.jpg" alt="" />
+      <img
+        class="image image-about"
+        src="./images/photos/view-restaurant.jpg"
+        alt=""
+      />
 
       <h4 class="section section--grey">RESTAURANT</h4>
       <h2 class="sub-title">Get Restaurant Facilities & Many Other More</h2>
@@ -100,7 +99,7 @@
         tem por incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
       </p>
-      <button class="button-page button-page__sepia">TAKE A TOUR</button>
+     <a href="./contact.html"> <button class="button-page button-page__sepia">TAKE A TOUR</button></a
     </section>
     <section class="facilities-section facilities-section--black">
       <div class="block-center block-center__facilities">
@@ -232,30 +231,31 @@
     <section class="counter">
       <h4 class="section section--grey">COUNTER</h4>
       <h2 class="title">Some Fun Facts</h2>
-
-      <div class="container-fun-facts">
-        <img src="./images/happy-user.svg" alt="" />
-        <div>
-          <p class="counter__number">8000</p>
-          <p class="counter__text">Happy Users</p>
+      <div class="block-container-fun-facts">
+        <div class="container-fun-facts">
+          <img src="./images/happy-user.svg" alt="" />
+          <div>
+            <p class="counter__number">8000</p>
+            <p class="counter__text">Happy Users</p>
+          </div>
+          <i class="fa-solid fa-arrow-right-long"></i>
         </div>
-        <i class="fa-solid fa-arrow-right-long"></i>
-      </div>
-      <div class="container-fun-facts">
-        <img src="./images/review.svg" alt="" />
-        <div>
-          <p class="counter__number">10M</p>
-          <p class="counter__text">Reviews & Appreciate</p>
+        <div class="container-fun-facts">
+          <img src="./images/review.svg" alt="" />
+          <div>
+            <p class="counter__number">10M</p>
+            <p class="counter__text">Reviews & Appreciate</p>
+          </div>
+          <i class="fa-solid fa-arrow-right-long"></i>
         </div>
-        <i class="fa-solid fa-arrow-right-long"></i>
-      </div>
-      <div class="container-fun-facts">
-        <img src="./images/globe.svg" alt="" />
-        <div>
-          <p class="counter__number">100</p>
-          <p class="counter__text">Country Coverage</p>
+        <div class="container-fun-facts">
+          <img src="./images/globe.svg" alt="" />
+          <div>
+            <p class="counter__number">100</p>
+            <p class="counter__text">Country Coverage</p>
+          </div>
+          <i class="fa-solid fa-arrow-right-long"></i>
         </div>
-        <i class="fa-solid fa-arrow-right-long"></i>
       </div>
     </section>
     <div class="carousel-slider">
