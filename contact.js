@@ -107,6 +107,7 @@ function initMap() {
 
   if (!locations) return null;
   const markers = locations.map((position, i) => {
+    const label = `Hotel Miranda`;
     let marker = new google.maps.Marker({
       position,
       icon: svgMarker,
@@ -114,6 +115,7 @@ function initMap() {
     });
 
     marker.addListener("click", () => {
+      infoWindow.setContent(label);
       infoWindow.open(map, marker);
     });
     return marker;
@@ -259,7 +261,7 @@ function initMap() {
       strokeOpacity: 1,
       strokeWeight: 2,
       fillColor: "#5AD07A",
-      fillOpacity: 0.8,
+      fillOpacity: 0.3,
     });
     map = new google.maps.Map(document.getElementById("map"), {
       zoom: 6.3,
