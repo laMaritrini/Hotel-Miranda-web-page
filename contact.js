@@ -120,7 +120,6 @@ function initMap() {
   });
   new markerClusterer.MarkerClusterer({ map, markers });
 
-
   geocoder = new google.maps.Geocoder();
 
   /////////////////////////////
@@ -262,12 +261,23 @@ function initMap() {
       fillColor: "#5AD07A",
       fillOpacity: 0.8,
     });
-    // map = new google.maps.Map(document.getElementById("map"), {
-    //   zoom: 8,
-    //   center: ,
-    // });
-    console.log(index);
-    console.log(locations);
+    map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 6.3,
+      center: comunidades[index - 1][0][0],
+    });
+    const markers = locations.map((position, i) => {
+      let marker = new google.maps.Marker({
+        position,
+        icon: svgMarker,
+        map: map,
+      });
+
+      marker.addListener("click", () => {
+        infoWindow.open(map, marker);
+      });
+      return marker;
+    });
+
     select.addEventListener("change", () => marker.setMap(null));
     marker.setMap(map);
   }
