@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script type="module" src="./contact.js"></script>
+
     <script
       src="https://kit.fontawesome.com/b519a5fd3c.js"
       crossorigin="anonymous"
@@ -120,33 +121,51 @@
     </section>
     <section>
       <form action="" class="contact-form">
-        <label class="input-contact" for="">
-          <input type="text" placeholder="Your full name" />
+        <label class="input-contact" for="input-name">
+          <input type="text" placeholder="Your full name" id="input-name" />
           <i class="fa-solid fa-user contact-icon"></i>
         </label>
-        <label class="input-contact" for="">
-          <input type="number" placeholder="Add phone number" />
+        <label class="input-contact" for="input-number">
+          <input
+            type="number"
+            placeholder="Add phone number"
+            id="input-number"
+          />
           <i class="fa-solid fa-phone contact-icon"></i>
         </label>
-        <label class="input-contact" for="">
-          <input type="email" placeholder="Enter email address" />
+        <label class="input-contact" for="input-email">
+          <input
+            type="email"
+            placeholder="Enter email address"
+            id="input-email"
+            required
+          />
           <i class="fa-solid fa-envelope contact-icon"></i>
         </label>
-        <label class="input-contact" for="">
-          <input type="text" placeholder="Enter subject" />
+        <label class="input-contact" for="input-subject">
+          <input type="text" placeholder="Enter subject" id="input-subject" />
           <i class="fa-solid fa-book contact-icon"></i>
         </label>
-        <label class="input-contact" for="">
+        <label class="input-contact" for="input-message">
           <textarea
             type="text"
             width="400px"
             rows="15"
             cols="22"
             placeholder="Enter your message"
+            id="input-message"
           ></textarea>
           <i class="fa-solid fa-pencil contact-icon contact-icon--textarea"></i>
         </label>
-        <button class="contact-form__button">SEND</button>
+        <p id="error-text">You have to fill the form to continue.</p>
+        <p id="confirm-text">
+          Message sent successfully, we will get in touch with you as soon as
+          possible.
+        </p>
+        <p id="error-email">Insert a valid email</p>
+        <button class="contact-form__button" id="send-form" type="submit">
+          SEND
+        </button>
       </form>
     </section>
     <footer>

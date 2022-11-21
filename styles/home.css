@@ -106,7 +106,7 @@
   padding: 20px;
 }
 .facilities-section--black {
-  background-color: black;
+  background-color: #222222;
   color: #f9f9f9;
 }
 
@@ -188,8 +188,13 @@
   padding: 20px;
 }
 
+.container-features {
+  display: none;
+}
+
 @media only screen and (min-width: 600px) {
-  .head-main, .text-block {
+  .head-main,
+.text-block {
     padding: 20px 160px;
   }
   .availability-check {
@@ -206,6 +211,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 160px;
   }
   .facilities-section,
 .food-section {
@@ -267,6 +273,22 @@
   }
   .block-center__price--night {
     font-size: 45px;
+  }
+  .container-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .container-features__feature {
+    width: 40%;
+    margin: 20px;
+    padding: 20px;
+  }
+  .container-features__feature--black {
+    background-color: #292929;
+  }
+  .block-center__facilities {
+    height: 300px;
   }
 }
 

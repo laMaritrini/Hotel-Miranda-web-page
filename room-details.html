@@ -7,6 +7,7 @@
     <title>Hotel Miranda | Room Details</title>
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+     <script type="module" src="./room-details.js"></script>
     <script
       src="https://kit.fontawesome.com/b519a5fd3c.js"
       crossorigin="anonymous"
@@ -63,13 +64,15 @@
     <section class="check-availability">
       <h4 class="check-title">Check Availability</h4>
       <form action="" class="check-availability__form">
-        <label for="" class="check-availability__form check-availability__form--title ">Check In</label>
-        <input type="date" name="" id="" />
-        <label for="" class="check-availability__form check-availability__form--title ">Check Out</label>
-        <input type="date" name="" id="" />
-        <button class="button-page button-page__sepia">
+        <label for="check-in" class="check-availability__form check-availability__form--title ">Check In</label>
+        <input type="date" name="check-out" id="check-in" />
+        <label for="check-out" class="check-availability__form check-availability__form--title ">Check Out</label>
+        <input type="date" name="check-out" id="check-out" />
+        <button class="button-page button-page__sepia " id="check-button">
           CHECK AVAILABILITY
         </button>
+        <p class="no-available-message">Sorry, the hotel has no rooms available for the dates of your stay. Please contact us. </p>
+        <p class="error-message">Please, introduce the dates check availability.</p>
       </form>
 
       <p class="paragraph">

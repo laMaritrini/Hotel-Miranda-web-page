@@ -76,7 +76,7 @@ const locations = [
   },
 ];
 let marker;
-let response;
+// let response;
 
 let userPosition = [];
 let address;
@@ -84,9 +84,10 @@ let geocoder;
 let map;
 
 function initMap() {
+  let sortedHotels = [];
   const hotelMiranda = { lat: 40.42739376579836, lng: -3.7142062351779046 };
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
+    zoom: 5,
     center: hotelMiranda,
   });
   const infoWindow = new google.maps.InfoWindow({
@@ -119,35 +120,6 @@ function initMap() {
   });
   new markerClusterer.MarkerClusterer({ map, markers });
 
-  // const locationButton = document.createElement("button");
-
-  // locationButton.textContent = "Pan to Current Location";
-  // locationButton.classList.add("custom-map-control-button");
-  // map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
-
-  // locationButton.addEventListener("click", () => {
-  //   if (navigator.geolocation) {
-  //     navigator.geolocation.getCurrentPosition(
-  //       (position) => {
-  //         const pos = {
-  //           lat: position.coords.latitude,
-  //           lng: position.coords.longitude,
-  //         };
-
-  //         infoWindow.setPosition(pos);
-  //         infoWindow.setContent("You are here!");
-  //         infoWindow.open(map);
-  //         map.setCenter(pos);
-  //         userPosition.push(pos);
-  //       },
-  //       () => {
-  //         handleLocationError(true, infoWindow, map.getCenter());
-  //       }
-  //     );
-  //   } else {
-  //     handleLocationError(false, infoWindow, map.getCenter());
-  //   }
-  // });
 
   geocoder = new google.maps.Geocoder();
 
@@ -232,6 +204,7 @@ function initMap() {
         travelMode: "DRIVING",
       })
       .then((response) => {
+        console.log(response);
         const locations = response.destinationAddresses.map((direction) => ({
           direction: direction,
         }));
@@ -239,11 +212,13 @@ function initMap() {
           distance: distance.distance,
         }));
 
-        let sortedHotels = [];
+        deleteMarkers(sortedHotels);
+
         for (let i = 0; i < locations.length; i++) {
           sortedHotels.push({ ...locations[i], ...distances[i] });
         }
         console.log(sortedHotels, "hotel");
+
         sortedHotels.sort((a, b) => {
           return a.distance.value - b.distance.value;
         });
@@ -259,6 +234,9 @@ function initMap() {
           document.getElementById("response").appendChild(distance);
         }
       });
+  }
+  function deleteMarkers(sortedHotels) {
+    sortedHotels.length = 0;
   }
 
   const select = document.getElementById("comunidadesAuto");
@@ -284,6 +262,13 @@ function initMap() {
       fillColor: "#5AD07A",
       fillOpacity: 0.8,
     });
+    // map = new google.maps.Map(document.getElementById("map"), {
+    //   zoom: 8,
+    //   center: ,
+    // });
+    console.log(index);
+    console.log(locations);
+    select.addEventListener("change", () => marker.setMap(null));
     marker.setMap(map);
   }
 }
@@ -312,3 +297,50 @@ const comunidadesAutonomas = [
   "Ceuta",
   "Melilla",
 ];
+
+// FORM
+
+const inputName = document.getElementById("input-name");
+const inputNumber = document.getElementById("input-number");
+const inputEmail = document.getElementById("input-email");
+const inputSubject = document.getElementById("input-subject");
+const inputMessage = document.getElementById("input-message");
+const sendButton = document.getElementById("send-form");
+const confirmMessage = document.getElementById("confirm-text");
+const errorMessage = document.getElementById("error-text");
+const errorEmail = document.getElementById("error-email");
+
+const messageResponse = (e) => {
+  const regex =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/;
+  e.preventDefault();
+
+  if (
+    !inputName.value ||
+    !inputNumber.value ||
+    !inputEmail.value ||
+    !inputSubject.value ||
+    !inputMessage.value
+  ) {
+    errorMessage.style.display = "block";
+    confirmMessage.style.display = "none";
+    return false;
+  } else if (!regex.test(inputEmail.value)) {
+    errorEmail.style.display = "block";
+    confirmMessage.style.display = "none";
+    errorMessage.style.display = "none";
+    return false;
+  } else {
+    confirmMessage.style.display = "block";
+    errorEmail.style.display = "none";
+    errorMessage.style.display = "none";
+    inputName.value = null;
+    inputNumber.value = null;
+    inputSubject.value = null;
+    inputEmail.value = null;
+    inputMessage.value = null;
+    return true;
+  }
+};
+
+sendButton.addEventListener("click", messageResponse);

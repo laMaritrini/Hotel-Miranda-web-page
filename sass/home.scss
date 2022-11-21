@@ -60,7 +60,7 @@
   background-color: white;
   width: 300px;
   height: 300px;
-  margin:0 auto;
+  margin: 0 auto;
   display: block;
   text-align: center;
   margin-bottom: 40px;
@@ -105,7 +105,7 @@
 .facilities-section {
   padding: 20px;
   &--black {
-    background-color: black;
+    background-color: #222222;
     color: #f9f9f9;
   }
 }
@@ -183,9 +183,13 @@
 .block-records {
   padding: 20px;
 }
+.container-features {
+  display: none;
+}
 
 @media only screen and (min-width: 600px) {
-  .head-main, .text-block {
+  .head-main,
+  .text-block {
     padding: 20px 160px;
   }
 
@@ -200,10 +204,11 @@
         brightness(85%) contrast(82%);
     }
   }
-  .video-section{
+  .video-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 160px;
   }
 
   .facilities-section,
@@ -248,20 +253,21 @@
     // height: 614px;
     object-fit: cover;
   }
-  .availability-check{
-  &__input  {
-    font-size: 26px;
+  .availability-check {
+    &__input {
+      font-size: 26px;
+    }
+    &__label {
+      font-size: 28px;
+    }
   }
-  &__label {
-    font-size: 28px;
-  }}
   .video-home {
     width: 70%;
     height: 600px;
     padding: 40px;
   }
   .menu-section {
-     padding-bottom: 100px;
+    padding-bottom: 100px;
   }
   .block-center__price {
     font-size: 80px;
@@ -269,5 +275,23 @@
       font-size: 45px;
     }
   }
+  .container-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    // grid-template-columns: 33% 33% 33%;
 
+    &__feature {
+      width: 40%;
+      margin: 20px;
+      padding: 20px ;
+      &--black {
+        background-color: #292929;
+      }
+    }
+  }
+
+  .block-center__facilities {
+    height: 300px;
+  }
 }

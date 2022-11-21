@@ -53,6 +53,24 @@
 .related {
   padding: 20px;
 }
+.no-available-message  {
+  display: none;
+  background: #f8d7da;
+  padding: 15px 10px;
+  margin-bottom: 35px;
+  border-radius: 5px;
+  color: #8b3e46;
+  border: 1px solid #f5c6cb;
+}
+.error-message {
+   display: none;
+  background: #f8d7da;
+  padding: 15px 10px;
+  margin-bottom: 35px;
+  border-radius: 5px;
+  color: #8b3e46;
+  border: 1px solid #f5c6cb;
+}
 
 @media only screen and (min-width: 600px) {
   .details-section {
@@ -83,9 +101,9 @@
     font-size: 23px;
   }
   .founder-pic {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%;
-}
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
 }
