@@ -165,6 +165,17 @@
   border: 1px solid #f5c6cb;
 }
 
+#error-number {
+  display: none;
+  background: #f8d7da;
+  padding: 15px 10px;
+  margin-bottom: 35px;
+  border-radius: 5px;
+  color: #8b3e46;
+  font-size: 20px;
+  border: 1px solid #f5c6cb;
+}
+
 @media only screen and (min-width: 600px) {
   .contact-section,
 .google-section {

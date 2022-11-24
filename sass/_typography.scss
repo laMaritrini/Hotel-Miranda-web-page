@@ -65,17 +65,21 @@
 
 @media only screen and (min-width: 600px) {
   .title {
-    font-size: 80px;
-    padding: 40px;
+    font-size: 70px;
+    padding: 40px 0;
+    &--resize {
+      font-size: 50px;
+       padding: 40px;
+    }
   }
   .section {
     width: fit-content;
-    font-size: 23px;
-  }
-  .paragraph {
     font-size: 20px;
   }
+  .paragraph {
+    font-size: 16px;
+  }
   .sub-title {
-    font-size: 40px;
+    font-size: 32px;
   }
 }

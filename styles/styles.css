@@ -123,7 +123,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    padding: 40px;
+    padding: 20px;
   }
   .header__title {
     padding-left: 10%;
@@ -427,8 +427,8 @@
   }
   .container-features__feature {
     width: 40%;
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 15px;
   }
   .container-features__feature--black {
     background-color: #292929;
@@ -1143,18 +1143,22 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
 
 @media only screen and (min-width: 600px) {
   .title {
-    font-size: 80px;
+    font-size: 70px;
+    padding: 40px 0;
+  }
+  .title--resize {
+    font-size: 50px;
     padding: 40px;
   }
   .section {
     width: fit-content;
-    font-size: 23px;
-  }
-  .paragraph {
     font-size: 20px;
   }
+  .paragraph {
+    font-size: 16px;
+  }
   .sub-title {
-    font-size: 40px;
+    font-size: 32px;
   }
 }
 .container-duplex-room {
@@ -1236,10 +1240,6 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
   letter-spacing: 2.4px;
 }
 
-.icon-category:hover {
-  filter: brightness(200%);
-}
-
 .container-icons-about {
   display: flex;
   flex-direction: row;
@@ -1257,6 +1257,9 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
 .about-icons:hover {
   background-color: #bead8e;
   color: white;
+}
+.about-icons:hover > .icon-category {
+  filter: brightness(200%);
 }
 
 @media only screen and (min-width: 600px) {
@@ -1318,7 +1321,7 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
   .restaurant,
 .facilities-section,
 .counter {
-    padding: 20px 160px;
+    padding: 20px 100px;
   }
   .about-video {
     width: 70%;
@@ -1329,7 +1332,7 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
   }
   .container-fun-facts {
     width: 60%;
-    grid-template-columns: 30% 40% 20%;
+    grid-template-columns: 30% 60% 20%;
   }
   .counter__number {
     font-size: 80px;
@@ -1539,6 +1542,17 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
 }
 
 #error-email {
+  display: none;
+  background: #f8d7da;
+  padding: 15px 10px;
+  margin-bottom: 35px;
+  border-radius: 5px;
+  color: #8b3e46;
+  font-size: 20px;
+  border: 1px solid #f5c6cb;
+}
+
+#error-number {
   display: none;
   background: #f8d7da;
   padding: 15px 10px;

@@ -133,6 +133,10 @@
         <label class="input-contact" for="input-number">
           <input
             type="number"
+            min="9"
+            max="15"
+            inputmode="numeric"
+            pattern="[0-9]"
             placeholder="Add phone number"
             id="input-number"
           />
@@ -140,10 +144,10 @@
         </label>
         <label class="input-contact" for="input-email">
           <input
-            type="email"
-            placeholder="Enter email address"
-            id="input-email"
-            required
+          type="email"
+          placeholder="Enter email address"
+          id="input-email"
+          required
           />
           <i class="fa-solid fa-envelope contact-icon"></i>
         </label>
@@ -153,21 +157,22 @@
         </label>
         <label class="input-contact" for="input-message">
           <textarea
-            type="text"
-            width="400px"
-            rows="15"
-            cols="22"
-            placeholder="Enter your message"
-            id="input-message"
+          type="text"
+          width="400px"
+          rows="15"
+          cols="22"
+          placeholder="Enter your message"
+          id="input-message"
           ></textarea>
           <i class="fa-solid fa-pencil contact-icon contact-icon--textarea"></i>
         </label>
         <p id="error-text">You have to fill the form to continue.</p>
+        <p id="error-number">Please, insert a valid telephone number.</p>
+        <p id="error-email">Please, insert a valid email.</p>
         <p id="confirm-text">
           Message sent successfully, we will get in touch with you as soon as
           possible.
         </p>
-        <p id="error-email">Insert a valid email</p>
         <button class="contact-form__button" id="send-form" type="submit">
           SEND
         </button>

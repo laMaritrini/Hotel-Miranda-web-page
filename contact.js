@@ -321,11 +321,12 @@ const sendButton = document.getElementById("send-form");
 const confirmMessage = document.getElementById("confirm-text");
 const errorMessage = document.getElementById("error-text");
 const errorEmail = document.getElementById("error-email");
+const errorNumber = document.getElementById("error-number");
 
 const messageResponse = (e) => {
+  e.preventDefault();
   const regex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/;
-  e.preventDefault();
 
   if (
     !inputName.value ||
@@ -342,8 +343,13 @@ const messageResponse = (e) => {
     confirmMessage.style.display = "none";
     errorMessage.style.display = "none";
     return false;
+  } else if (inputNumber.value.length < 9) {
+    errorNumber.style.display = "block";
+    confirmMessage.style.display = "none";
+    errorMessage.style.display = "none";
   } else {
     confirmMessage.style.display = "block";
+    errorNumber.style.display = "none";
     errorEmail.style.display = "none";
     errorMessage.style.display = "none";
     inputName.value = null;

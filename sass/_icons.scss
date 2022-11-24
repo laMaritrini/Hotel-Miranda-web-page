@@ -70,9 +70,7 @@
     letter-spacing: 2.4px;
   }
 }
-.icon-category:hover {
-  filter: brightness(200%);
-}
+
 .container-icons-about {
   display: flex;
   flex-direction: row;
@@ -88,6 +86,9 @@
 .about-icons:hover {
   background-color: $sepia;
   color: white;
+  & > .icon-category {
+    filter: brightness(200%);
+  }
 }
 @media only screen and (min-width: 600px) {
   .team-icon {
