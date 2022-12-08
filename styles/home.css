@@ -49,9 +49,8 @@
   margin-top: 60px;
   width: 100%;
   background-color: #f9f9f9;
-  height: 800px;
+  height: fit-content;
   padding: 20px;
-  margin-bottom: 400px;
 }
 
 .team,
@@ -221,8 +220,12 @@
     display: flex;
     justify-content: space-around;
   }
+  .section-records__text {
+    font-size: 40px;
+  }
   .about-us {
     padding: 20px 160px;
+    margin-bottom: 0;
   }
   .images-text {
     display: flex;
@@ -233,25 +236,29 @@
   .team-icon {
     padding: 45px;
   }
+  .team {
+    margin: 0;
+  }
   .rooms-section {
     width: 100%;
-    height: 655px;
-    padding: 20px 160px;
+    height: 555px;
+    background: inherit;
     display: flex;
     justify-content: space-between;
     margin: 0;
     align-items: center;
   }
   .rooms-section__text {
-    width: 27%;
-    margin-left: 30px;
+    width: 300px;
+    margin-left: 2px;
     height: 80%;
   }
   .image {
-    height: 500px;
+    height: 400px;
+    width: 60%;
   }
   .image-home {
-    width: 60%;
+    height: 400px;
     object-fit: cover;
   }
   .availability-check__input {
@@ -262,17 +269,17 @@
   }
   .video-home {
     width: 70%;
-    height: 600px;
+    height: 400px;
     padding: 40px;
   }
   .menu-section {
     padding-bottom: 100px;
   }
   .block-center__price {
-    font-size: 80px;
+    font-size: 30px;
   }
   .block-center__price--night {
-    font-size: 45px;
+    font-size: 20px;
   }
   .container-features {
     display: flex;
@@ -280,7 +287,7 @@
     justify-content: space-around;
   }
   .container-features__feature {
-    width: 40%;
+    width: 30%;
     margin: 10px;
     padding: 15px;
   }
@@ -289,6 +296,10 @@
   }
   .block-center__facilities {
     height: 300px;
+  }
+  .rooms-section__text {
+    height: 400px;
+    padding: 54px 12px;
   }
 }
 

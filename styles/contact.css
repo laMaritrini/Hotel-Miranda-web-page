@@ -22,6 +22,7 @@
 
 .direction-title {
   margin-left: 20px;
+  font-weight: 700;
 }
 .direction-title__input {
   margin: 10px 10px 0 20px;
@@ -179,50 +180,62 @@
 @media only screen and (min-width: 600px) {
   .contact-section,
 .google-section {
-    padding: 40px 160px;
-    font-size: 26px;
+    padding: 20px 160px;
+    font-size: 16px;
   }
   .block-contact {
-    font-size: 26px;
+    font-size: 16px;
+    padding: 16px;
   }
   .select-community {
-    font-size: 24px;
+    font-size: 16px;
   }
   .direction-title__input {
-    font-size: 24px;
+    font-size: 16px;
   }
   .direction-title__submit {
-    font-size: 24px;
+    font-size: 16px;
     padding: 7px 10px;
   }
   .find-location {
-    font-size: 24px;
+    font-size: 16px;
     padding: 7px 10px;
   }
   .contact-form {
     padding: 0 0 40px 0;
+    margin: 0;
   }
   .contact-form input {
     padding: 10px 40px;
     width: 450px;
-    margin: 20px;
-    font-size: 24px;
+    margin: 0;
+    font-size: 16px;
   }
   .contact-form textarea {
-    font-size: 24px;
+    font-size: 16px;
     font-family: inherit;
     width: 450px;
   }
+  .input-contact {
+    margin: 0;
+  }
   .contact-icon {
-    top: 16%;
-    left: 12%;
+    top: -8%;
+    left: 10%;
   }
   .contact-icon--textarea {
     left: 12%;
     top: 3%;
   }
   .contact-form__button {
-    font-size: 24px;
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+  .block-contact__number {
+    font-size: 85px;
+  }
+  .title-community {
+    font-size: 20px;
   }
 }
 

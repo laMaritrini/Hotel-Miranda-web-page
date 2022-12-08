@@ -27,7 +27,7 @@
 
 @media only screen and (min-width: 600px) {
   .room-detail {
-    width: 90%;
+    width: 100%;
   }
   .rooms-list {
     width: 100%;
@@ -37,7 +37,11 @@
     justify-content: space-around;
   }
   .room-block {
-    width: 600px;
+    width: 400px;
+    padding: 10px;
+  }
+  .image-rooms {
+    width: 100%;
   }
 }
 

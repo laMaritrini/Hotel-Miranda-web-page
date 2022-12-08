@@ -123,7 +123,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    padding: 20px;
+    padding: 10px;
   }
   .header__title {
     padding-left: 10%;
@@ -135,7 +135,7 @@
   }
   .header__a {
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
   }
   .respmenu {
     display: none;
@@ -195,9 +195,8 @@
   margin-top: 60px;
   width: 100%;
   background-color: #f9f9f9;
-  height: 800px;
+  height: fit-content;
   padding: 20px;
-  margin-bottom: 400px;
 }
 
 .team,
@@ -367,8 +366,12 @@
     display: flex;
     justify-content: space-around;
   }
+  .section-records__text {
+    font-size: 40px;
+  }
   .about-us {
     padding: 20px 160px;
+    margin-bottom: 0;
   }
   .images-text {
     display: flex;
@@ -379,25 +382,29 @@
   .team-icon {
     padding: 45px;
   }
+  .team {
+    margin: 0;
+  }
   .rooms-section {
     width: 100%;
-    height: 655px;
-    padding: 20px 160px;
+    height: 555px;
+    background: inherit;
     display: flex;
     justify-content: space-between;
     margin: 0;
     align-items: center;
   }
   .rooms-section__text {
-    width: 27%;
-    margin-left: 30px;
+    width: 300px;
+    margin-left: 2px;
     height: 80%;
   }
   .image {
-    height: 500px;
+    height: 400px;
+    width: 60%;
   }
   .image-home {
-    width: 60%;
+    height: 400px;
     object-fit: cover;
   }
   .availability-check__input {
@@ -408,17 +415,17 @@
   }
   .video-home {
     width: 70%;
-    height: 600px;
+    height: 400px;
     padding: 40px;
   }
   .menu-section {
     padding-bottom: 100px;
   }
   .block-center__price {
-    font-size: 80px;
+    font-size: 30px;
   }
   .block-center__price--night {
-    font-size: 45px;
+    font-size: 20px;
   }
   .container-features {
     display: flex;
@@ -426,7 +433,7 @@
     justify-content: space-around;
   }
   .container-features__feature {
-    width: 40%;
+    width: 30%;
     margin: 10px;
     padding: 15px;
   }
@@ -435,6 +442,10 @@
   }
   .block-center__facilities {
     height: 300px;
+  }
+  .rooms-section__text {
+    height: 400px;
+    padding: 54px 12px;
   }
 }
 .footer {
@@ -545,13 +556,13 @@
     padding: 20px 160px;
   }
   .footer__category {
-    font-size: 40px;
+    font-size: 25px;
   }
   .footer__list--service, .footer__contact--text {
-    font-size: 24px;
+    font-size: 14px;
   }
   .social-icon {
-    font-size: 60px;
+    font-size: 35px;
   }
   .copyright {
     display: flex;
@@ -579,7 +590,15 @@
   order: 1;
   background-color: white;
   color: #fff;
-  height: 730px;
+  height: 655px;
+}
+
+.carousel-slider > .slides > .slide-breakfast {
+  flex: 0 0 100%;
+  order: 1;
+  background-color: white;
+  color: #fff;
+  height: 530px;
 }
 
 .carousel-slider > .slides > .slide-features {
@@ -741,6 +760,14 @@
 }
 
 .carousel-slider-features > .slides > .slide {
+  flex: 0 0 100%;
+  order: 1;
+  background-color: white;
+  color: #fff;
+  height: 730px;
+}
+
+.carousel-slider-features > .slides > .slide-breakfast {
   flex: 0 0 100%;
   order: 1;
   background-color: white;
@@ -1017,16 +1044,28 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
 @media only screen and (min-width: 600px) {
   .carousel-slider {
     max-width: 1000px;
-    margin-top: 150px;
+    margin-top: 50px;
   }
   .input#rest2:checked ~ .slides > #rest-2 {
     height: 600px;
   }
   .carousel-slider > .slides > .slide {
-    height: 900px;
+    height: 760px;
+  }
+  .carousel-slider > .slides > .slide-breakfast {
+    height: 550px;
   }
   .carousel-slider-features {
     display: none;
+  }
+  .carousel-slider > label.break-prev {
+    right: 35%;
+  }
+  .carousel-slider > label.break-next {
+    right: 30%;
+  }
+  .menu-section {
+    padding-bottom: 40px;
   }
 }
 .button-page {
@@ -1067,11 +1106,13 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
 
 @media only screen and (min-width: 600px) {
   .button-page {
-    font-size: 24px;
-    padding: 40px 65px;
+    font-size: 15px;
+    padding: 20px 48px;
+    cursor: pointer;
   }
   .head-main__buttons {
-    font-size: 24px;
+    font-size: 16px;
+    cursor: pointer;
   }
 }
 .title {
@@ -1143,19 +1184,19 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
 
 @media only screen and (min-width: 600px) {
   .title {
-    font-size: 70px;
+    font-size: 40px;
     padding: 40px 0;
   }
   .title--resize {
-    font-size: 50px;
-    padding: 40px;
+    font-size: 33px;
+    padding: 40px 160px;
   }
   .section {
     width: fit-content;
-    font-size: 20px;
+    font-size: 16px;
   }
   .paragraph {
-    font-size: 16px;
+    font-size: 14px;
   }
   .sub-title {
     font-size: 32px;
@@ -1276,7 +1317,10 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
     width: 15%;
   }
   .icons-group-room {
-    width: 50%;
+    width: 40%;
+  }
+  .icons-group {
+    width: 30%;
   }
 }
 .presentation {
@@ -1324,8 +1368,8 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
     padding: 20px 100px;
   }
   .about-video {
-    width: 70%;
-    height: 600px;
+    width: 50%;
+    height: 400px;
   }
   .image-about {
     width: 70%;
@@ -1372,7 +1416,7 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
 
 @media only screen and (min-width: 600px) {
   .room-detail {
-    width: 90%;
+    width: 100%;
   }
   .rooms-list {
     width: 100%;
@@ -1382,7 +1426,11 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
     justify-content: space-around;
   }
   .room-block {
-    width: 600px;
+    width: 400px;
+    padding: 10px;
+  }
+  .image-rooms {
+    width: 100%;
   }
 }
 .custom-map-control-button {
@@ -1409,6 +1457,7 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
 
 .direction-title {
   margin-left: 20px;
+  font-weight: 700;
 }
 .direction-title__input {
   margin: 10px 10px 0 20px;
@@ -1566,50 +1615,62 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
 @media only screen and (min-width: 600px) {
   .contact-section,
 .google-section {
-    padding: 40px 160px;
-    font-size: 26px;
+    padding: 20px 160px;
+    font-size: 16px;
   }
   .block-contact {
-    font-size: 26px;
+    font-size: 16px;
+    padding: 16px;
   }
   .select-community {
-    font-size: 24px;
+    font-size: 16px;
   }
   .direction-title__input {
-    font-size: 24px;
+    font-size: 16px;
   }
   .direction-title__submit {
-    font-size: 24px;
+    font-size: 16px;
     padding: 7px 10px;
   }
   .find-location {
-    font-size: 24px;
+    font-size: 16px;
     padding: 7px 10px;
   }
   .contact-form {
     padding: 0 0 40px 0;
+    margin: 0;
   }
   .contact-form input {
     padding: 10px 40px;
     width: 450px;
-    margin: 20px;
-    font-size: 24px;
+    margin: 0;
+    font-size: 16px;
   }
   .contact-form textarea {
-    font-size: 24px;
+    font-size: 16px;
     font-family: inherit;
     width: 450px;
   }
+  .input-contact {
+    margin: 0;
+  }
   .contact-icon {
-    top: 16%;
-    left: 12%;
+    top: -8%;
+    left: 10%;
   }
   .contact-icon--textarea {
     left: 12%;
     top: 3%;
   }
   .contact-form__button {
-    font-size: 24px;
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+  .block-contact__number {
+    font-size: 85px;
+  }
+  .title-community {
+    font-size: 20px;
   }
 }
 .offers-list {
@@ -1679,7 +1740,16 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
   }
   .full-price,
 .offer-price {
-    right: 190px;
+    right: 200px;
+  }
+  .full-price {
+    font-size: 15px;
+  }
+  .offer-price {
+    font-size: 20px;
+  }
+  .container-photo-offers {
+    width: 100%;
   }
 }
 .details-section {
@@ -1767,29 +1837,30 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
   .details-section {
     padding: 20px 160px;
   }
-  .image-detail {
-    width: 80%;
-    height: 600px;
+  .image-offer {
+    width: 60%;
+    height: 300px;
   }
   .check-title {
-    font-size: 40px;
+    font-size: 20px;
     padding-bottom: 20px;
   }
   .check-availability__form {
-    font-size: 30px;
+    font-size: 16px;
   }
   .check-availability__form > input {
-    font-size: 28px;
+    font-size: 16px;
   }
   .amenities-offers__block {
-    font-size: 26px;
-    padding-bottom: 20px;
+    font-size: 16px;
+    padding-bottom: 10px;
+    align-items: flex-start;
   }
   .amenities-offers__block > img {
     width: 35px;
   }
   .founder__paragraph {
-    font-size: 23px;
+    font-size: 16px;
   }
   .founder-pic {
     width: 300px;
