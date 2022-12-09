@@ -24,6 +24,9 @@ body {
   min-width: 320px;
   background-color: rgb(255, 252, 252);
 }
+main {
+  position: relative;
+}
 a {
   text-decoration: none;
   color: inherit;

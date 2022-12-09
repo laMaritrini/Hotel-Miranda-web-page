@@ -31,6 +31,24 @@
     color: $sepia;
   }
 }
+.scroll-top-button {
+  cursor: pointer;
+  box-sizing: content-box;
+  position: fixed;
+  right: 2rem;
+  bottom: 10%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 40px;
+  color:#bead8e;
+  z-index: 1;
+  &:active {
+    transform: scale(0.8);
+    color:#b99656;
+  }
+}
+
 
 @media only screen and (min-width: 600px) {
   .button-page {

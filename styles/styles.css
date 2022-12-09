@@ -488,6 +488,8 @@
 .footer__list--service {
   font-weight: 400;
   color: #777777;
+  display: flex;
+  justify-content: flex-start;
 }
 .footer__list--service:before {
   content: "+";
@@ -555,6 +557,9 @@
   .footer {
     padding: 20px 160px;
   }
+  .footer__list {
+    width: 80%;
+  }
   .footer__category {
     font-size: 25px;
   }
@@ -566,6 +571,7 @@
   }
   .copyright {
     display: flex;
+    height: 50px;
     align-items: center;
     justify-content: space-around;
   }
@@ -1104,6 +1110,24 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
   color: #bead8e;
 }
 
+.scroll-top-button {
+  cursor: pointer;
+  box-sizing: content-box;
+  position: fixed;
+  right: 2rem;
+  bottom: 10%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #bead8e;
+  z-index: 1;
+}
+.scroll-top-button:active {
+  transform: scale(0.8);
+  color: #b99656;
+}
+
 @media only screen and (min-width: 600px) {
   .button-page {
     font-size: 15px;
@@ -1379,7 +1403,7 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
     grid-template-columns: 30% 60% 20%;
   }
   .counter__number {
-    font-size: 80px;
+    font-size: 50px;
   }
   .block-container-fun-facts {
     display: flex;
@@ -1880,6 +1904,10 @@ body {
   font-family: "Archivo", sans-serif;
   min-width: 320px;
   background-color: rgb(255, 252, 252);
+}
+
+main {
+  position: relative;
 }
 
 a {

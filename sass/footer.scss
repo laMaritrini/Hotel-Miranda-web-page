@@ -39,6 +39,8 @@
     &--service {
       font-weight: 400;
       color: #777777;
+      display: flex;
+      justify-content: flex-start;
     }
     &--service:before {
       content: "+";
@@ -101,6 +103,9 @@
 @media only screen and (min-width: 600px) {
   .footer {
     padding: 20px 160px;
+    &__list {
+      width: 80%;
+    }
     &__category {
       font-size: 25px;
     }
@@ -114,6 +119,7 @@
   }
   .copyright {
     display: flex;
+    height: 50px;
     align-items: center;
     justify-content: space-around;
   }
