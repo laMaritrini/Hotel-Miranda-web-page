@@ -9,7 +9,7 @@
 
 .image {
   width: 100%;
-  height: 400px;
+   height: 270px;
   margin: auto;
   display: block;
   &--team {
@@ -120,6 +120,7 @@
     position: absolute;
     right: 10%;
     top: 0;
+
     &--darker {
       color: #222222;
     }
@@ -228,6 +229,8 @@
   }
   .images-text {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
   .container-icons {
     height: 140px;
@@ -237,6 +240,7 @@
   }
   .team {
     margin: 0;
+    height: 400px;
   }
   .rooms-section {
     width: 100%;
@@ -259,6 +263,7 @@
   }
   .image-home {
     // width: 50%;
+    // width: 300px;
     height: 400px;
     object-fit: cover;
   }
@@ -280,6 +285,7 @@
   }
   .block-center__price {
     font-size: 30px;
+    text-align: center;
     &--night {
       font-size: 20px;
     }
@@ -288,10 +294,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 20px;
     // grid-template-columns: 33% 33% 33%;
 
     &__feature {
-      width: 30%;
+      width: 26%;
       margin: 10px;
       padding: 15px;
       &--black {
@@ -300,11 +307,18 @@
     }
   }
 
-  .block-center__facilities {
-    height: 300px;
-  }
+  // .block-center__facilities {
+  //   height: 300px;
+  // }
   .rooms-section__text {
     height: 400px;
     padding: 54px 12px;
+  }
+  .features-block__number {
+    font-size: 95px;
+  }
+  .features-block__img {
+    width: 40px;
+    height: 40px;
   }
 }

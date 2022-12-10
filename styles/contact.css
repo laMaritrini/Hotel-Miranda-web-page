@@ -113,13 +113,12 @@
   background-color: #bead8e;
   border: none;
   width: fit-content;
-  padding: 20px 60px;
+  padding: 15px 36px;
 }
 
 .input-contact {
   position: relative;
   padding: 10px 40px;
-  margin: 20px;
 }
 
 .contact-icon {

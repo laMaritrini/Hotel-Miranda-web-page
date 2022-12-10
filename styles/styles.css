@@ -123,7 +123,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    padding: 10px;
+    padding: 5px;
   }
   .header__title {
     padding-left: 10%;
@@ -135,13 +135,18 @@
   }
   .header__a {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
   }
   .respmenu {
     display: none;
   }
   .logo__title {
-    font-size: 25px;
+    font-size: 14px;
+  }
+  .logo__H {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
   }
 }
 .head-main {
@@ -153,7 +158,7 @@
 
 .image {
   width: 100%;
-  height: 400px;
+  height: 270px;
   margin: auto;
   display: block;
 }
@@ -375,6 +380,8 @@
   }
   .images-text {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
   .container-icons {
     height: 140px;
@@ -384,6 +391,7 @@
   }
   .team {
     margin: 0;
+    height: 400px;
   }
   .rooms-section {
     width: 100%;
@@ -423,6 +431,7 @@
   }
   .block-center__price {
     font-size: 30px;
+    text-align: center;
   }
   .block-center__price--night {
     font-size: 20px;
@@ -431,21 +440,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 20px;
   }
   .container-features__feature {
-    width: 30%;
+    width: 26%;
     margin: 10px;
     padding: 15px;
   }
   .container-features__feature--black {
     background-color: #292929;
   }
-  .block-center__facilities {
-    height: 300px;
-  }
   .rooms-section__text {
     height: 400px;
     padding: 54px 12px;
+  }
+  .features-block__number {
+    font-size: 95px;
+  }
+  .features-block__img {
+    width: 40px;
+    height: 40px;
   }
 }
 .footer {
@@ -1218,12 +1232,16 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
   .section {
     width: fit-content;
     font-size: 16px;
+    padding-top: 20px;
   }
   .paragraph {
     font-size: 14px;
   }
   .sub-title {
-    font-size: 32px;
+    font-size: 28px;
+  }
+  .features-block {
+    height: 80px;
   }
 }
 .container-duplex-room {
@@ -1327,6 +1345,10 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
   filter: brightness(200%);
 }
 
+.icon-room-amenities {
+  width: 14px;
+}
+
 @media only screen and (min-width: 600px) {
   .team-icon {
     padding: 45px;
@@ -1396,7 +1418,7 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
     height: 400px;
   }
   .image-about {
-    width: 70%;
+    width: 50%;
   }
   .container-fun-facts {
     width: 60%;
@@ -1420,10 +1442,6 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
   width: 70%;
   text-align: center;
   padding: 40px 0 60px;
-}
-
-.inline {
-  display: inline;
 }
 
 .booking {
@@ -1455,6 +1473,7 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
   }
   .image-rooms {
     width: 100%;
+    height: 350px;
   }
 }
 .custom-map-control-button {
@@ -1572,13 +1591,12 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
   background-color: #bead8e;
   border: none;
   width: fit-content;
-  padding: 20px 60px;
+  padding: 15px 36px;
 }
 
 .input-contact {
   position: relative;
   padding: 10px 40px;
-  margin: 20px;
 }
 
 .contact-icon {
@@ -1716,7 +1734,7 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
   position: absolute;
   font-size: 30px;
   font-weight: 600;
-  bottom: 25%;
+  bottom: 35%;
   right: 30px;
   color: #bead8e;
 }
@@ -1749,6 +1767,7 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
 .amenities-offers__block {
   display: flex;
   padding: 5px;
+  align-items: center;
 }
 .amenities-offers__block--title {
   padding-left: 10px;
@@ -1764,7 +1783,8 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
   }
   .full-price,
 .offer-price {
-    right: 200px;
+    position: static;
+    background: inherit;
   }
   .full-price {
     font-size: 15px;
