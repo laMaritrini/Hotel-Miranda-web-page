@@ -17,10 +17,21 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="./scrollToTop.js"></script>
+    <script type="text/javascript" src="./search.js"></script>
   </head>
   <body>
     <header class="header">
       <p class="header__sub-title">We Make You Feel Comfortable</p>
+      <label for="search-bar" class="search-bar-button">
+        <input
+          type="text"
+          name="search-bar"
+          id="search-bar"
+          oninput="Search()"
+          placeholder="Search for pages..."
+        />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </label>
       <div class="respmenu">
         <input type="checkbox" />
         <i class="fa-solid fa-bars"></i>
@@ -49,93 +60,213 @@
         >
       </div>
     </header>
-       <main>
-         <i class="fa-solid fa-circle-up scroll-top-button"></i>
-    <section class="head-main">
-      <h4 class="section">THE ULTIMATE LUXURY</h4>
-      <h2 class="title">About Us</h2>
-      <div class="head-main__buttons">
-        <a href="./index.html">Home</a>
-        <span>|</span>
-        <a class="head-main__buttons--sepia" href="">About</a>
-      </div>
-    </section>
+    <main>
+      <i class="fa-solid fa-circle-up scroll-top-button"></i>
+      <section class="head-main">
+        <h4 class="section">THE ULTIMATE LUXURY</h4>
+        <h2 class="title">About Us</h2>
+        <div class="head-main__buttons">
+          <a href="./index.html">Home</a>
+          <span>|</span>
+          <a class="head-main__buttons--sepia" href="">About</a>
+        </div>
+      </section>
 
-    <section class="presentation">
-      <iframe
-        class="about-video"
-        width="100%"
-        height="315"
-        src="https://www.youtube.com/embed/Bu3Doe45lcU"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <h2 class="title title--resize">
-        Hello. Our hotel has been present for over 20 years. We make the best
-        for all our customers.
-      </h2>
-      <div class="container-icons-about">
-        <div class="about-icons">
-          <img class="icon-category" src="./images/breakfast.png" alt="" />
-          <p class="icon-category__name">BREAKFAST</p>
+      <section class="presentation">
+        <iframe
+          class="about-video"
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/Bu3Doe45lcU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <h2 class="title title--resize">
+          Hello. Our hotel has been present for over 20 years. We make the best
+          for all our customers.
+        </h2>
+        <div class="container-icons-about">
+          <div class="about-icons">
+            <img class="icon-category" src="./images/breakfast.png" alt="" />
+            <p class="icon-category__name">BREAKFAST</p>
+          </div>
+          <div class="about-icons">
+            <img class="icon-category" src="./images/airplane.png" alt="" />
+            <p class="icon-category__name">AIRPORT PICKUP</p>
+          </div>
+          <div class="about-icons">
+            <img class="icon-category" src="./images/city-guide.png" alt="" />
+            <p class="icon-category__name">CITY GUIDE</p>
+          </div>
+          <div class="about-icons">
+            <img class="icon-category" src="./images/luxury-room.png" alt="" />
+            <p class="icon-category__name">LUXURY ROOM</p>
+          </div>
         </div>
-        <div class="about-icons">
-          <img class="icon-category" src="./images/airplane.png" alt="" />
-          <p class="icon-category__name">AIRPORT PICKUP</p>
-        </div>
-        <div class="about-icons">
-          <img class="icon-category" src="./images/city-guide.png" alt="" />
-          <p class="icon-category__name">CITY GUIDE</p>
-        </div>
-        <div class="about-icons">
-          <img class="icon-category" src="./images/luxury-room.png" alt="" />
-          <p class="icon-category__name">LUXURY ROOM</p>
-        </div>
-      </div>
-    </section>
-    <section class="restaurant">
-      <img
-        class="image image-about"
-        src="./images/photos/view-restaurant.jpg"
-        alt=""
-      />
+      </section>
+      <section class="restaurant">
+        <img
+          class="image image-about"
+          src="./images/photos/view-restaurant.jpg"
+          alt=""
+        />
 
-      <h4 class="section section--grey">RESTAURANT</h4>
-      <h2 class="sub-title">Get Restaurant Facilities & Many Other More</h2>
-      <p class="paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tem por incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-      </p>
-      <a href="./contact.html">
-        <button class="button-page button-page__sepia">TAKE A TOUR</button></a
-      >
-    </section>
-    <section class="facilities-section facilities-section--black">
-      <div class="block-center block-center__facilities">
-        <h4 class="section section--grey">FACILITIES</h4>
-        <h2 class="title">Core Features</h2>
-      </div>
-      <div class="carousel-slider-features">
-        <input type="radio" name="control" id="features1" checked />
-        <input type="radio" name="control" id="features2" />
-        <input type="radio" name="control" id="features3" />
-        <input type="radio" name="control" id="features4" />
-        <input type="radio" name="control" id="features5" />
-        <input type="radio" name="control" id="features6" />
-
-        <div class="slider-nav">
-          <label for="features1" class="slide-nav-1"></label>
-          <label for="features2" class="slide-nav-2"></label>
-          <label for="features3" class="slide-nav-3"></label>
-          <label for="features4" class="slide-nav-4"></label>
-          <label for="features5" class="slide-nav-4"></label>
-          <label for="features6" class="slide-nav-4"></label>
+        <h4 class="section section--grey">RESTAURANT</h4>
+        <h2 class="sub-title">Get Restaurant Facilities & Many Other More</h2>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip.
+        </p>
+        <a href="./contact.html">
+          <button class="button-page button-page__sepia">TAKE A TOUR</button></a
+        >
+      </section>
+      <section class="facilities-section facilities-section--black">
+        <div class="block-center block-center__facilities">
+          <h4 class="section section--grey">FACILITIES</h4>
+          <h2 class="title">Core Features</h2>
         </div>
-        <div class="slides">
-          <div id="features-1" class="slide-features slide-features--color">
+        <div class="carousel-slider-features">
+          <input type="radio" name="control" id="features1" checked />
+          <input type="radio" name="control" id="features2" />
+          <input type="radio" name="control" id="features3" />
+          <input type="radio" name="control" id="features4" />
+          <input type="radio" name="control" id="features5" />
+          <input type="radio" name="control" id="features6" />
+
+          <div class="slider-nav">
+            <label for="features1" class="slide-nav-1"></label>
+            <label for="features2" class="slide-nav-2"></label>
+            <label for="features3" class="slide-nav-3"></label>
+            <label for="features4" class="slide-nav-4"></label>
+            <label for="features5" class="slide-nav-4"></label>
+            <label for="features6" class="slide-nav-4"></label>
+          </div>
+          <div class="slides">
+            <div id="features-1" class="slide-features slide-features--color">
+              <div class="features-block">
+                <p
+                  class="features-block__number features-block__number--darker"
+                >
+                  01
+                </p>
+                <img
+                  class="features-block__img"
+                  src="./images/rating.svg"
+                  alt=""
+                />
+              </div>
+              <h3 class="sub-title sub-title--color">Have High Rating</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div id="features-2" class="slide-features slide-features--color">
+              <div class="features-block">
+                <p
+                  class="features-block__number features-block__number--darker"
+                >
+                  02
+                </p>
+                <img
+                  class="features-block__img"
+                  src="./images/clock.svg"
+                  alt=""
+                />
+              </div>
+              <h3 class="sub-title sub-title--color">Quiet Hours</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div id="features-3" class="slide-features slide-features--color">
+              <div class="features-block">
+                <p
+                  class="features-block__number features-block__number--darker"
+                >
+                  03
+                </p>
+                <img
+                  class="features-block__img"
+                  src="./images/pointer-map.svg"
+                  alt=""
+                />
+              </div>
+              <h3 class="sub-title sub-title--color">Best Locations</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div id="features-4" class="slide-features slide-features--color">
+              <div class="features-block">
+                <p
+                  class="features-block__number features-block__number--darker"
+                >
+                  04
+                </p>
+                <img
+                  class="features-block__img"
+                  src="./images/clock-cancell.svg"
+                  alt=""
+                />
+              </div>
+              <h3 class="sub-title sub-title--color">Free Cancellation</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div id="features-5" class="slide-features slide-features--color">
+              <div class="features-block">
+                <p
+                  class="features-block__number features-block__number--darker"
+                >
+                  05
+                </p>
+                <img
+                  class="features-block__img"
+                  src="./images/payment.svg"
+                  alt=""
+                />
+              </div>
+              <h3 class="sub-title sub-title--color">Payment Options</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div id="features-6" class="slide-features slide-features--color">
+              <div class="features-block">
+                <p
+                  class="features-block__number features-block__number--darker"
+                >
+                  06
+                </p>
+                <img
+                  class="features-block__img"
+                  src="./images/ribbon.svg"
+                  alt=""
+                />
+              </div>
+              <h3 class="sub-title sub-title--color">Special Offers</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container-features">
+          <div
+            class="container-features__feature container-features__feature--black slide-features--color"
+          >
             <div class="features-block">
               <p class="features-block__number features-block__number--darker">
                 01
@@ -152,7 +283,9 @@
               eiusmod tempor incididunt ut labore et dolore magna..
             </p>
           </div>
-          <div id="features-2" class="slide-features slide-features--color">
+          <div
+            class="container-features__feature container-features__feature--black slide-features--color"
+          >
             <div class="features-block">
               <p class="features-block__number features-block__number--darker">
                 02
@@ -169,7 +302,9 @@
               eiusmod tempor incididunt ut labore et dolore magna..
             </p>
           </div>
-          <div id="features-3" class="slide-features slide-features--color">
+          <div
+            class="container-features__feature container-features__feature--black slide-features--color"
+          >
             <div class="features-block">
               <p class="features-block__number features-block__number--darker">
                 03
@@ -186,7 +321,9 @@
               eiusmod tempor incididunt ut labore et dolore magna..
             </p>
           </div>
-          <div id="features-4" class="slide-features slide-features--color">
+          <div
+            class="container-features__feature container-features__feature--black slide-features--color"
+          >
             <div class="features-block">
               <p class="features-block__number features-block__number--darker">
                 04
@@ -203,7 +340,9 @@
               eiusmod tempor incididunt ut labore et dolore magna..
             </p>
           </div>
-          <div id="features-5" class="slide-features slide-features--color">
+          <div
+            class="container-features__feature container-features__feature--black slide-features--color"
+          >
             <div class="features-block">
               <p class="features-block__number features-block__number--darker">
                 05
@@ -220,7 +359,9 @@
               eiusmod tempor incididunt ut labore et dolore magna..
             </p>
           </div>
-          <div id="features-6" class="slide-features slide-features--color">
+          <div
+            class="container-features__feature container-features__feature--black slide-features--color"
+          >
             <div class="features-block">
               <p class="features-block__number features-block__number--darker">
                 06
@@ -238,164 +379,59 @@
             </p>
           </div>
         </div>
-      </div>
-      <div class="container-features">
-        <div
-          class="container-features__feature container-features__feature--black slide-features--color"
-        >
-          <div class="features-block">
-            <p class="features-block__number features-block__number--darker">
-              01
-            </p>
-            <img class="features-block__img" src="./images/rating.svg" alt="" />
+      </section>
+      <section class="counter">
+        <h4 class="section section--grey">COUNTER</h4>
+        <h2 class="title">Some Fun Facts</h2>
+        <div class="block-container-fun-facts">
+          <div class="container-fun-facts">
+            <img src="./images/happy-user.svg" alt="" />
+            <div>
+              <p class="counter__number">8000</p>
+              <p class="counter__text">Happy Users</p>
+            </div>
+            <i class="fa-solid fa-arrow-right-long"></i>
           </div>
-          <h3 class="sub-title sub-title--color">Have High Rating</h3>
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna..
-          </p>
+          <div class="container-fun-facts">
+            <img src="./images/review.svg" alt="" />
+            <div>
+              <p class="counter__number">10M</p>
+              <p class="counter__text">Reviews & Appreciate</p>
+            </div>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
+          <div class="container-fun-facts">
+            <img src="./images/globe.svg" alt="" />
+            <div>
+              <p class="counter__number">100</p>
+              <p class="counter__text">Country Coverage</p>
+            </div>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
         </div>
-        <div
-          class="container-features__feature container-features__feature--black slide-features--color"
-        >
-          <div class="features-block">
-            <p class="features-block__number features-block__number--darker">
-              02
-            </p>
-            <img class="features-block__img" src="./images/clock.svg" alt="" />
-          </div>
-          <h3 class="sub-title sub-title--color">Quiet Hours</h3>
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna..
-          </p>
+      </section>
+      <div class="carousel-slider">
+        <input type="radio" name="control" id="rest1" />
+        <input type="radio" name="control" id="rest2" checked />
+        <input type="radio" name="control" id="rest3" />
+        <div class="slider-nav">
+          <label for="rest1" class="slide-nav-1"></label>
+          <label for="rest2" class="slide-nav-2"></label>
+          <label for="rest3" class="slide-nav-3"></label>
         </div>
-        <div
-          class="container-features__feature container-features__feature--black slide-features--color"
-        >
-          <div class="features-block">
-            <p class="features-block__number features-block__number--darker">
-              03
-            </p>
-            <img
-              class="features-block__img"
-              src="./images/pointer-map.svg"
-              alt=""
-            />
+        <div class="slides">
+          <div id="rest-1" class="slide-features">
+            <img class="image" src="./images/photos/restaurant.jpg" alt="" />
           </div>
-          <h3 class="sub-title sub-title--color">Best Locations</h3>
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna..
-          </p>
-        </div>
-        <div
-          class="container-features__feature container-features__feature--black slide-features--color"
-        >
-          <div class="features-block">
-            <p class="features-block__number features-block__number--darker">
-              04
-            </p>
-            <img
-              class="features-block__img"
-              src="./images/clock-cancell.svg"
-              alt=""
-            />
+          <div id="rest-2" class="slide-features">
+            <img class="image" src="./images/photos/plate.jpg" alt="" />
           </div>
-          <h3 class="sub-title sub-title--color">Free Cancellation</h3>
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna..
-          </p>
-        </div>
-        <div
-          class="container-features__feature container-features__feature--black slide-features--color"
-        >
-          <div class="features-block">
-            <p class="features-block__number features-block__number--darker">
-              05
-            </p>
-            <img
-              class="features-block__img"
-              src="./images/payment.svg"
-              alt=""
-            />
+          <div id="rest-3" class="slide-features">
+            <img class="image" src="./images/photos/kitchen.jpg" alt="" />
           </div>
-          <h3 class="sub-title sub-title--color">Payment Options</h3>
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna..
-          </p>
-        </div>
-        <div
-          class="container-features__feature container-features__feature--black slide-features--color"
-        >
-          <div class="features-block">
-            <p class="features-block__number features-block__number--darker">
-              06
-            </p>
-            <img class="features-block__img" src="./images/ribbon.svg" alt="" />
-          </div>
-          <h3 class="sub-title sub-title--color">Special Offers</h3>
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna..
-          </p>
         </div>
       </div>
-    </section>
-    <section class="counter">
-      <h4 class="section section--grey">COUNTER</h4>
-      <h2 class="title">Some Fun Facts</h2>
-      <div class="block-container-fun-facts">
-        <div class="container-fun-facts">
-          <img src="./images/happy-user.svg" alt="" />
-          <div>
-            <p class="counter__number">8000</p>
-            <p class="counter__text">Happy Users</p>
-          </div>
-          <i class="fa-solid fa-arrow-right-long"></i>
-        </div>
-        <div class="container-fun-facts">
-          <img src="./images/review.svg" alt="" />
-          <div>
-            <p class="counter__number">10M</p>
-            <p class="counter__text">Reviews & Appreciate</p>
-          </div>
-          <i class="fa-solid fa-arrow-right-long"></i>
-        </div>
-        <div class="container-fun-facts">
-          <img src="./images/globe.svg" alt="" />
-          <div>
-            <p class="counter__number">100</p>
-            <p class="counter__text">Country Coverage</p>
-          </div>
-          <i class="fa-solid fa-arrow-right-long"></i>
-        </div>
-      </div>
-    </section>
-    <div class="carousel-slider">
-      <input type="radio" name="control" id="rest1" />
-      <input type="radio" name="control" id="rest2" checked />
-      <input type="radio" name="control" id="rest3" />
-      <div class="slider-nav">
-        <label for="rest1" class="slide-nav-1"></label>
-        <label for="rest2" class="slide-nav-2"></label>
-        <label for="rest3" class="slide-nav-3"></label>
-      </div>
-      <div class="slides">
-        <div id="rest-1" class="slide-features">
-          <img class="image" src="./images/photos/restaurant.jpg" alt="" />
-        </div>
-        <div id="rest-2" class="slide-features">
-          <img class="image" src="./images/photos/plate.jpg" alt="" />
-        </div>
-        <div id="rest-3" class="slide-features">
-          <img class="image" src="./images/photos/kitchen.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-       </main>
+    </main>
     <footer>
       <div class="footer">
         <div class="block-introduction">
