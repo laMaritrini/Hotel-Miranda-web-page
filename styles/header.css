@@ -147,6 +147,18 @@
     height: 50px;
     font-size: 20px;
   }
+  .search-bar-button {
+    position: relative;
+  }
+  .search-bar-button input {
+    padding: 7px;
+  }
+  .fa-magnifying-glass {
+    position: absolute;
+    right: 10px;
+    bottom: 9px;
+    padding-left: 3px;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

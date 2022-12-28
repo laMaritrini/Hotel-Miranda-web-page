@@ -64,9 +64,8 @@
     display: none;
   }
   &__title {
-   padding-left: 30%;
+    padding-left: 30%;
   }
-
 }
 .input-wrapper {
   position: relative;
@@ -121,7 +120,7 @@
     justify-content: flex-end;
     padding: 5px;
     &__title {
-   padding-left: 10%;
+      padding-left: 10%;
     }
     &__nav-desktop {
       display: flex;
@@ -137,7 +136,7 @@
   .respmenu {
     display: none;
   }
-  .logo__title{
+  .logo__title {
     font-size: 14px;
   }
   .logo__H {
@@ -145,5 +144,16 @@
     height: 50px;
     font-size: 20px;
   }
-
+  .search-bar-button {
+    position: relative;
+    & input {
+      padding: 7px;
+    }
+  }
+  .fa-magnifying-glass {
+    position: absolute;
+    right: 10px;
+    bottom: 9px;
+    padding-left: 3px;
+  }
 }
