@@ -118,6 +118,10 @@
   line-height: 1.9;
 }
 
+.search-bar-button {
+  display: none;
+}
+
 @media only screen and (min-width: 600px) {
   .header {
     display: flex;
@@ -149,7 +153,9 @@
     font-size: 20px;
   }
   .search-bar-button {
+    display: block;
     position: relative;
+    margin-right: 20px;
   }
   .search-bar-button input {
     padding: 7px;
@@ -1608,7 +1614,7 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
 
 .input-contact {
   position: relative;
-  padding: 10px 40px;
+  padding: 10px 30px;
 }
 
 .contact-icon {
