@@ -8,6 +8,7 @@ function Search() {
     search_query.toLowerCase().includes("minimal")
   ) {
     window.location.assign("./rooms.html");
+    search_query = "";
   } else if (
     search_query.toLowerCase().includes("about") ||
     search_query.toLowerCase().includes("video") ||
@@ -15,20 +16,24 @@ function Search() {
     search_query.toLowerCase().includes("miranda")
   ) {
     window.location.assign("./about-us.html");
+    search_query = "";
   } else if (search_query.toLowerCase().includes("contact")) {
     window.location.assign("./contact.html");
   } else if (search_query.toLowerCase().includes("offers")) {
     window.location.assign("./offers.html");
+    search_query = "";
   } else if (
     search_query.toLowerCase().includes("home") ||
     search_query.toLowerCase().includes("features")
   ) {
     window.location.assign("./index.html");
+    search_query = "";
   } else if (
     search_query.toLowerCase().includes("book") ||
     search_query.toLowerCase().includes("luxury")
   ) {
     window.location.assign("./room-details.html");
+    search_query = "";
   } else if (
     search_query.toLowerCase().includes("map") ||
     search_query.toLowerCase().includes("address") ||
@@ -36,12 +41,14 @@ function Search() {
     search_query.toLowerCase().includes("email")
   ) {
     window.location.assign(`./contact.html#${search_query}`);
+    search_query = "";
   } else if (
     search_query.toLowerCase().includes("services") ||
     search_query.toLowerCase().includes("menu") ||
     search_query.toLowerCase().includes("food")
   ) {
     window.location.assign(`./index.html#${search_query}`);
+    search_query = "";
   } else {
     return false;
   }
