@@ -1501,6 +1501,12 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
     width: 100%;
     height: 350px;
   }
+  .booking {
+    transition: 0.3s;
+  }
+  .booking:hover {
+    transform: scale(1.08);
+  }
 }
 .custom-map-control-button {
   background-color: #fff;
