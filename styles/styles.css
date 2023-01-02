@@ -464,9 +464,13 @@
     width: 26%;
     margin: 10px;
     padding: 15px;
+    transition: 0.3s;
   }
   .container-features__feature--black {
     background-color: #292929;
+  }
+  .container-features__feature:hover {
+    transform: scale(1.05);
   }
   .rooms-section__text {
     height: 400px;
@@ -1815,6 +1819,10 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
   }
 }
 .details-section {
+  padding: 20px;
+}
+
+.amenities, .cancellation {
   padding: 20px;
 }
 

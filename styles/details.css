@@ -2,6 +2,10 @@
   padding: 20px;
 }
 
+.amenities, .cancellation {
+  padding: 20px;
+}
+
 .check-availability {
   padding: 30px;
   display: flex;
