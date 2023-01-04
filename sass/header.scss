@@ -152,13 +152,14 @@
     position: relative;
     margin-right: 20px;
     & input {
-      padding: 7px;
+      padding: 7px 30px 7px 10px;
     }
   }
   .fa-magnifying-glass {
     position: absolute;
     right: 10px;
-    bottom: 9px;
-    padding-left: 3px;
+    left: unset;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
