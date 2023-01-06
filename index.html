@@ -18,6 +18,7 @@
     ></script>
     <script type="module" src="./js/scrollToTop.js"></script>
     <script type="text/javascript" src="./js/search.js"></script>
+    <script type="module" src="./js/check-availability.js"></script>
   </head>
   <body>
     <header class="header">
@@ -74,9 +75,35 @@
             ><button class="button-page">LEARN MORE</button></a
           >
         </div>
-
-        <button class="button-page">
-          <a href="./rooms.html">CHECK AVAILABILITY</a>
+      </section>
+      <section class="availability-check">
+        <form action="" class="container-form">
+          <label for="" class="availability-check__label">Arrival Date</label>
+          <input
+            id="check-in"
+            type="date"
+            placeholder="24th march 2020"
+            class="availability-check__input"
+          />
+          <label for="" class="availability-check__label"
+            >LeDeparture Date</label
+          >
+          <input
+            id="check-out"
+            type="date"
+            placeholder="30th march 2020"
+            class="availability-check__input"
+          />
+        </form>
+        <p class="no-available-message no-available-message__home">
+          Sorry, the hotel has no rooms available for the dates of your stay.
+          Please contact us.
+        </p>
+        <p class="error-message error-message__home">
+          Please, introduce the dates check availability.
+        </p>
+        <button class="button-page" id="check-button">
+          CHECK AVAILABILITY
         </button>
       </section>
 

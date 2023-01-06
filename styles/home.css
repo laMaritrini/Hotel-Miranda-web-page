@@ -40,7 +40,7 @@
 }
 
 .container-form {
-  padding: 40px;
+  padding: 20px 20px 20px 40px;
   display: flex;
   flex-direction: column;
 }
@@ -265,10 +265,10 @@
     object-fit: cover;
   }
   .availability-check__input {
-    font-size: 26px;
+    font-size: 16px;
   }
   .availability-check__label {
-    font-size: 28px;
+    font-size: 16px;
   }
   .video-home {
     width: 70%;

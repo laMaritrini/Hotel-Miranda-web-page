@@ -1,7 +1,8 @@
 .details-section {
   padding: 20px;
 }
-.amenities, .cancellation {
+.amenities,
+.cancellation {
   padding: 20px;
 }
 .check-availability {
@@ -64,6 +65,12 @@
   border-radius: 5px;
   color: #8b3e46;
   border: 1px solid #f5c6cb;
+  &__home {
+    padding: 0 0 10px 15px;
+    background: none;
+    border: none;
+    margin-bottom: 0;
+  }
 }
 .error-message {
   display: none;
@@ -73,6 +80,12 @@
   border-radius: 5px;
   color: #8b3e46;
   border: 1px solid #f5c6cb;
+  &__home {
+    padding: 0 0 10px 15px;
+    background: none;
+    border: none;
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (min-width: 600px) {
