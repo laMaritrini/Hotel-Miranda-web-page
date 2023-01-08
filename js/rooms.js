@@ -1,7 +1,7 @@
 const rooms = [
   {
     id: 1,
-    photo: "../images/photos/duplex.jpg",
+    photo: "./../images/photos/duplex.jpg",
     title: "Premium Double Room",
     description:
       " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore.",
@@ -9,7 +9,7 @@ const rooms = [
   },
   {
     id: 2,
-    photo: "../images/photos/duplex2.jpg",
+    photo: "./../images/photos/duplex2.jpg",
     title: "Minimal Duplex Room",
     description:
       " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore.",
@@ -17,7 +17,7 @@ const rooms = [
   },
   {
     id: 3,
-    photo: "../images/photos/duplex3.jpg",
+    photo: "./../images/photos/duplex3.jpg",
     title: "Minimal Duplex Room",
     description:
       " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore.",
@@ -25,7 +25,7 @@ const rooms = [
   },
   {
     id: 4,
-    photo: "../images/photos/duplex4.jpg",
+    photo: "./../images/photos/duplex4.jpg",
     title: "Double Family Room",
     description:
       " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore.",
@@ -33,7 +33,7 @@ const rooms = [
   },
   {
     id: 5,
-    photo: "../images/photos/duplex5.jpg",
+    photo: "./../images/photos/duplex5.jpg",
     title: "Luxury Duplex Room",
     description:
       " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore.",
@@ -41,7 +41,7 @@ const rooms = [
   },
   {
     id: 6,
-    photo: "../images/photos/duplex6.jpg",
+    photo: "./../images/photos/duplex6.jpg",
     title: "Minimal Room",
     description:
       " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore.",
@@ -57,7 +57,7 @@ const roomsArray = () => {
     containerDuplexRoom.classList.add("container-duplex-room");
     const anchor = document.createElement("a");
     anchor.classList.add("room-detail");
-    anchor.href = "../room-details.html";
+    anchor.href = "./../room-details.html";
     const image = document.createElement("img");
     image.classList.add("image", "image-rooms");
     image.src = `${room.photo}`;
@@ -79,25 +79,25 @@ const roomsArray = () => {
     iconsGroupRoom.classList.add("icons-group-room");
     const imgBed = document.createElement("img");
     imgBed.classList.add("icon-rooms");
-    imgBed.src = "../images/bed.svg";
+    imgBed.src = "./../images/bed.svg";
     const imgWifi = document.createElement("img");
     imgWifi.classList.add("icon-rooms");
-    imgWifi.src = "../images/wifi.svg";
+    imgWifi.src = "./../images/wifi.svg";
     const imgCar = document.createElement("img");
     imgCar.classList.add("icon-rooms");
-    imgCar.src = "../images/car.svg";
+    imgCar.src = "./../images/car.svg";
     const imgSnowflakes = document.createElement("img");
     imgSnowflakes.classList.add("icon-rooms");
-    imgSnowflakes.src = "../images/snowflake.svg";
+    imgSnowflakes.src = "./../images/snowflake.svg";
     const imgDumbbell = document.createElement("img");
     imgDumbbell.classList.add("icon-rooms");
-    imgDumbbell.src = "../images/dumbbell.svg";
+    imgDumbbell.src = "./../images/dumbbell.svg";
     const imgCocktail = document.createElement("img");
     imgCocktail.classList.add("icon-rooms");
-    imgCocktail.src = "../images/cocktail.svg";
+    imgCocktail.src = "./../images/cocktail.svg";
     const anchorBooking = document.createElement("a");
     anchorBooking.classList.add("booking");
-    anchorBooking.href = "../room-details.html";
+    anchorBooking.href = "./../room-details.html";
     anchorBooking.innerText = `Booking Now`;
 
     price.appendChild(priceNight);
