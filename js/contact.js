@@ -154,6 +154,7 @@ function initMap() {
 
   const buttonRequest = document.getElementById("buttonRequest");
   let pos = {};
+
   buttonRequest.addEventListener("click", () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -176,6 +177,7 @@ function initMap() {
             userPosition[0].lat,
             userPosition[0].lng
           );
+
           calculateDistance(origin, destinations);
         },
         () => {
@@ -213,8 +215,6 @@ function initMap() {
           distance: distance.distance,
         }));
 
-        deleteMarkers(sortedHotels);
-
         for (let i = 0; i < locations.length; i++) {
           sortedHotels.push({ ...locations[i], ...distances[i] });
         }
@@ -237,9 +237,13 @@ function initMap() {
       });
   }
   function deleteMarkers(sortedHotels) {
-    sortedHotels.length = 0;
+    for (let hotel of sortedHotels) {
+      const direction = document.querySelector(".direction");
+      const distance = document.querySelector(".distance");
+      document.getElementById("response").removeChild(direction);
+      document.getElementById("response").removeChild(distance);
+    }
   }
-
   const select = document.getElementById("comunidadesAuto");
   comunidadesAutonomas.map((item) => {
     const comunidad = document.createElement("option");

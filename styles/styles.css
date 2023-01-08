@@ -1483,6 +1483,18 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
   height: 100%;
 }
 
+.sort {
+  padding: 20px 40px;
+}
+.sort__title {
+  font-weight: 600;
+}
+
+#select-room {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
 @media only screen and (min-width: 600px) {
   .room-detail {
     width: 100%;
