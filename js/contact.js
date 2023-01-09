@@ -85,6 +85,7 @@ let map;
 
 function initMap() {
   let sortedHotels = [];
+
   const hotelMiranda = { lat: 40.42739376579836, lng: -3.7142062351779046 };
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: 5,
@@ -188,6 +189,7 @@ function initMap() {
       handleLocationError(false, infoWindow, map.getCenter());
     }
   });
+
   function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     infoWindow.setPosition(pos);
     infoWindow.setContent(
@@ -207,23 +209,30 @@ function initMap() {
         travelMode: "DRIVING",
       })
       .then((response) => {
-        console.log(response);
         const locations = response.destinationAddresses.map((direction) => ({
           direction: direction,
         }));
         const distances = response.rows[0].elements.map((distance) => ({
           distance: distance.distance,
         }));
+        sortedHotels.length = 0;
 
         for (let i = 0; i < locations.length; i++) {
           sortedHotels.push({ ...locations[i], ...distances[i] });
         }
-        console.log(sortedHotels, "hotel");
 
         sortedHotels.sort((a, b) => {
           return a.distance.value - b.distance.value;
         });
 
+        if (document.querySelector(".direction")) {
+          for (let hotel of sortedHotels) {
+            const direction = document.querySelector(".direction");
+            const distance = document.querySelector(".distance");
+            document.getElementById("response").removeChild(direction);
+            document.getElementById("response").removeChild(distance);
+          }
+        }
         for (let hotel of sortedHotels) {
           const direction = document.createElement("li");
           direction.classList.add("direction");
@@ -236,14 +245,7 @@ function initMap() {
         }
       });
   }
-  function deleteMarkers(sortedHotels) {
-    for (let hotel of sortedHotels) {
-      const direction = document.querySelector(".direction");
-      const distance = document.querySelector(".distance");
-      document.getElementById("response").removeChild(direction);
-      document.getElementById("response").removeChild(distance);
-    }
-  }
+
   const select = document.getElementById("comunidadesAuto");
   comunidadesAutonomas.map((item) => {
     const comunidad = document.createElement("option");
