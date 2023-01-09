@@ -145,5 +145,7 @@ select.addEventListener("change", (e) => {
   }
 });
 
+
+
 DisplayList(rooms, list_rooms, rows, current_page);
 SetupPagination(rooms, pagination_element, rows);

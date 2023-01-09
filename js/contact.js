@@ -225,14 +225,9 @@ function initMap() {
           return a.distance.value - b.distance.value;
         });
 
-        if (document.querySelector(".direction")) {
-          for (let hotel of sortedHotels) {
-            const direction = document.querySelector(".direction");
-            const distance = document.querySelector(".distance");
-            document.getElementById("response").removeChild(direction);
-            document.getElementById("response").removeChild(distance);
-          }
-        }
+        const responseContainer = document.getElementById("response");
+        responseContainer.innerHTML = "";
+
         for (let hotel of sortedHotels) {
           const direction = document.createElement("li");
           direction.classList.add("direction");
@@ -240,8 +235,8 @@ function initMap() {
           distance.classList.add("distance");
           direction.innerText = `${hotel.direction} `;
           distance.innerText = `Distance: ${hotel.distance.text}`;
-          document.getElementById("response").appendChild(direction);
-          document.getElementById("response").appendChild(distance);
+          responseContainer.appendChild(direction);
+          responseContainer.appendChild(distance);
         }
       });
   }
