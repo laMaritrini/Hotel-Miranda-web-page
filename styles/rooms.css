@@ -48,7 +48,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  background-color: #bead8e;
+  background-color: rgba(190, 173, 142, 0.6196078431);
   margin: 5px;
   transition: 0.4s;
   color: #fff;
@@ -58,12 +58,11 @@
 }
 
 .pagination button:hover {
-  background-color: #b99656;
+  background-color: #bead8e;
 }
 
 .pagination button.active {
-  background-color: #b99656;
-  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+  background-color: #bead8e;
 }
 
 @media only screen and (min-width: 600px) {

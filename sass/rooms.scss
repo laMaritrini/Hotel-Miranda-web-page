@@ -7,9 +7,7 @@
   text-align: center;
   padding: 40px 0 60px;
 }
-// .inline {
-//   display: inline;
-// }
+
 .booking {
   padding-left: 3%;
   font-weight: 700;
@@ -47,7 +45,7 @@ border-radius: 100%;
   outline: none;
   cursor: pointer;
 
-  background-color: #bead8e;
+  background-color: #bead8e9e;
   margin: 5px;
   transition: 0.4s;
 
@@ -58,12 +56,13 @@ border-radius: 100%;
 }
 
 .pagination button:hover {
-  background-color:#b99656
+  background-color:#bead8e
 }
 
 .pagination button.active {
-  background-color: #b99656;
-  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+  background-color: #bead8e;
+ 
+
 }
 
 @media only screen and (min-width: 600px) {
