@@ -1495,6 +1495,39 @@ input#slide3:checked ~ .slider-nav > .slide-nav-3 {
   border-bottom: 1px solid black;
 }
 
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #bead8e;
+  margin: 5px;
+  transition: 0.4s;
+  color: #fff;
+  font-size: 18px;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pagination button:hover {
+  background-color: #b99656;
+}
+
+.pagination button.active {
+  background-color: #b99656;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
 @media only screen and (min-width: 600px) {
   .room-detail {
     width: 100%;

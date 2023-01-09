@@ -1,56 +1,22 @@
-const rooms = [
-  {
-    id: 1,
-    photo: "./images/photos/duplex.jpg",
-    title: "Premium Double Room",
-    description:
-      " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore.",
-    price: 345,
-  },
-  {
-    id: 2,
-    photo: "./images/photos/duplex2.jpg",
-    title: "Minimal Duplex Room",
-    description:
-      " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore.",
-    price: 335,
-  },
-  {
-    id: 3,
-    photo: "./images/photos/duplex3.jpg",
-    title: "Minimal Duplex Room",
-    description:
-      " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore.",
-    price: 370,
-  },
-  {
-    id: 4,
-    photo: "./images/photos/duplex4.jpg",
-    title: "Double Family Room",
-    description:
-      " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore.",
-    price: 380,
-  },
-  {
-    id: 5,
-    photo: "./images/photos/duplex5.jpg",
-    title: "Luxury Duplex Room",
-    description:
-      " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore.",
-    price: 340,
-  },
-  {
-    id: 6,
-    photo: "./images/photos/duplex6.jpg",
-    title: "Minimal Room",
-    description:
-      " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore.",
-    price: 355,
-  },
-];
+import {rooms} from "../data/roomsData.js";
 
-const roomsArray = () => {
-  for (let room of rooms) {
+const pagination_element = document.getElementById("pagination");
+const list_rooms = document.getElementById("rooms");
+
+let current_page = 1;
+let rows = 6;
+
+function DisplayList(items, wrapper, rows_per_page, page) {
+  wrapper.innerHTML = "";
+  page--;
+
+  let start = rows_per_page * page;
+  let end = start + rows_per_page;
+  let paginatedItems = items.slice(start, end);
+
+  for (let i = 0; i < paginatedItems.length; i++) {
+    let item = paginatedItems[i];
+
     const roomBlock = document.createElement("div");
     roomBlock.classList.add("room-block");
     const containerDuplexRoom = document.createElement("div");
@@ -60,18 +26,18 @@ const roomsArray = () => {
     anchor.href = "./room-details.html";
     const image = document.createElement("img");
     image.classList.add("image", "image-rooms");
-    image.src = `${room.photo}`;
+    image.src = `${item.photo}`;
     const blockCenterRoom = document.createElement("div");
     blockCenterRoom.classList.add("block-center-room");
     const title = document.createElement("h3");
     title.classList.add("sub-title");
-    title.innerText = `${room.title}`;
+    title.innerText = `${item.title}`;
     const paragraph = document.createElement("p");
     paragraph.classList.add("paragraph");
-    paragraph.innerText = `${room.description}`;
+    paragraph.innerText = `${item.description}`;
     const price = document.createElement("p");
     price.classList.add("block-center__price");
-    price.innerText = `$${room.price}`;
+    price.innerText = `$${item.price}`;
     const priceNight = document.createElement("span");
     priceNight.classList.add("block-center__price--night");
     priceNight.innerText = `/Night`;
@@ -117,16 +83,43 @@ const roomsArray = () => {
     blockCenterRoom.appendChild(anchorBooking);
     containerDuplexRoom.appendChild(anchor);
     containerDuplexRoom.appendChild(iconsGroupRoom);
-    document.getElementById("rooms").appendChild(roomBlock);
+    wrapper.appendChild(roomBlock);
   }
-};
-roomsArray();
+}
+function SetupPagination(items, wrapper, rows_per_page) {
+  wrapper.innerHTML = "";
 
-const remove = (rooms) => {
-  for (let room of rooms) {
-    const roomBlock = document.querySelector(".room-block");
-    document.getElementById("rooms").removeChild(roomBlock);
+  let page_count = Math.ceil(items.length / rows_per_page);
+  for (let i = 1; i < page_count + 1; i++) {
+    let btn = PaginationButton(i, items);
+    wrapper.appendChild(btn);
   }
+}
+
+function PaginationButton(page, items) {
+  let button = document.createElement("button");
+  button.innerText = page;
+
+  if (current_page == page) button.classList.add("active");
+
+  button.addEventListener("click", function () {
+    current_page = page;
+    DisplayList(items, list_rooms, rows, current_page);
+
+    let current_btn = document.querySelector(".pagination button.active");
+    current_btn.classList.remove("active");
+
+    button.classList.add("active");
+    toTop();
+  });
+
+  return button;
+}
+const toTop = () => {
+  document.documentElement.scrollTo({
+    behavior: "smooth",
+    top: 0,
+  });
 };
 
 const select = document.getElementById("select-room");
@@ -137,19 +130,20 @@ select.addEventListener("change", (e) => {
       rooms.sort((a, b) => {
         return a.price - b.price;
       });
-      remove(rooms);
-      roomsArray();
+
+      DisplayList(rooms, list_rooms, rows, current_page);
       break;
     case "bigger":
       rooms.sort((a, b) => {
         return b.price - a.price;
       });
-      remove(rooms);
-      roomsArray();
+
+      DisplayList(rooms, list_rooms, rows, current_page);
       break;
     default:
-      remove();
-      roomsArray();
+      DisplayList(rooms, list_rooms, rows, current_page);
   }
-  console.log(rooms);
 });
+
+DisplayList(rooms, list_rooms, rows, current_page);
+SetupPagination(rooms, pagination_element, rows);
