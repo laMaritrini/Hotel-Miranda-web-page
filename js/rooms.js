@@ -1,4 +1,4 @@
-import {rooms} from "../data/roomsData.js";
+import { rooms } from "../data/roomsData.js";
 
 const pagination_element = document.getElementById("pagination");
 const list_rooms = document.getElementById("rooms");
@@ -16,73 +16,54 @@ function DisplayList(items, wrapper, rows_per_page, page) {
 
   for (let i = 0; i < paginatedItems.length; i++) {
     let item = paginatedItems[i];
-
     const roomBlock = document.createElement("div");
-    roomBlock.classList.add("room-block");
-    const containerDuplexRoom = document.createElement("div");
-    containerDuplexRoom.classList.add("container-duplex-room");
-    const anchor = document.createElement("a");
-    anchor.classList.add("room-detail");
-    anchor.href = "./room-details.html";
-    const image = document.createElement("img");
-    image.classList.add("image", "image-rooms");
-    image.src = `${item.photo}`;
-    const blockCenterRoom = document.createElement("div");
-    blockCenterRoom.classList.add("block-center-room");
-    const title = document.createElement("h3");
-    title.classList.add("sub-title");
-    title.innerText = `${item.title}`;
-    const paragraph = document.createElement("p");
-    paragraph.classList.add("paragraph");
-    paragraph.innerText = `${item.description}`;
-    const price = document.createElement("p");
-    price.classList.add("block-center__price");
-    price.innerText = `$${item.price}`;
-    const priceNight = document.createElement("span");
-    priceNight.classList.add("block-center__price--night");
-    priceNight.innerText = `/Night`;
-    const iconsGroupRoom = document.createElement("div");
-    iconsGroupRoom.classList.add("icons-group-room");
-    const imgBed = document.createElement("img");
-    imgBed.classList.add("icon-rooms");
-    imgBed.src = "./images/bed.svg";
-    const imgWifi = document.createElement("img");
-    imgWifi.classList.add("icon-rooms");
-    imgWifi.src = "./images/wifi.svg";
-    const imgCar = document.createElement("img");
-    imgCar.classList.add("icon-rooms");
-    imgCar.src = "./images/car.svg";
-    const imgSnowflakes = document.createElement("img");
-    imgSnowflakes.classList.add("icon-rooms");
-    imgSnowflakes.src = "./images/snowflake.svg";
-    const imgDumbbell = document.createElement("img");
-    imgDumbbell.classList.add("icon-rooms");
-    imgDumbbell.src = "./images/dumbbell.svg";
-    const imgCocktail = document.createElement("img");
-    imgCocktail.classList.add("icon-rooms");
-    imgCocktail.src = "./images/cocktail.svg";
-    const anchorBooking = document.createElement("a");
-    anchorBooking.classList.add("booking");
-    anchorBooking.href = "./room-details.html";
-    anchorBooking.innerText = `Booking Now`;
+    roomBlock.innerHTML = `
+    <div class="room-block">
+          <div class="container-duplex-room">
+            <a class="room-detail" href="room-details.html">
+              <img
+                class="image image-rooms"
+                src=${item.photo}
+                alt=""
+              />
+            </a>
+            <div class="icons-group-room">
+              <img class="icon-rooms" src="./images/bed.svg" alt="bed" />
+              <img class="icon-rooms" src="./images/wifi.svg" alt="wifi" />
+              <img class="icon-rooms" src="./images/car.svg" alt="car" />
+              <img
+                class="icon-rooms"
+                src="./images/snowflake.svg"
+                alt="snowflake"
+              />
+              <img
+                class="icon-rooms"
+                src="./images/dumbbell.svg"
+                alt="dumbbell"
+              />
+              <img
+                class="icon-rooms"
+                src="./images/cocktail.svg"
+                alt="cocktail"
+              />
+            </div>
+          </div>
+          <div class="block-center-room">
+            <h3 class="sub-title"><a href=./room-details.html>${item.title}</a></h3>
+            <p class="paragraph">
+            ${item.description}
+            </p>
 
-    price.appendChild(priceNight);
-    iconsGroupRoom.appendChild(imgBed);
-    iconsGroupRoom.appendChild(imgWifi);
-    iconsGroupRoom.appendChild(imgCar);
-    iconsGroupRoom.appendChild(imgSnowflakes);
-    iconsGroupRoom.appendChild(imgDumbbell);
-    iconsGroupRoom.appendChild(imgCocktail);
+            <p class="block-center__price inline">
+              $${item.price}<span class="block-center__price--night">/Night</span>
+            </p>
+            <p class="booking inline">
+              <a href="./room-details.html">Booking Now</a>
+            </p>
+          </div>
+        </div>
+    `;
 
-    roomBlock.appendChild(containerDuplexRoom);
-    roomBlock.appendChild(blockCenterRoom);
-    anchor.appendChild(image);
-    blockCenterRoom.appendChild(title);
-    blockCenterRoom.appendChild(paragraph);
-    blockCenterRoom.appendChild(price);
-    blockCenterRoom.appendChild(anchorBooking);
-    containerDuplexRoom.appendChild(anchor);
-    containerDuplexRoom.appendChild(iconsGroupRoom);
     wrapper.appendChild(roomBlock);
   }
 }
@@ -144,8 +125,6 @@ select.addEventListener("change", (e) => {
       DisplayList(rooms, list_rooms, rows, current_page);
   }
 });
-
-
 
 DisplayList(rooms, list_rooms, rows, current_page);
 SetupPagination(rooms, pagination_element, rows);
